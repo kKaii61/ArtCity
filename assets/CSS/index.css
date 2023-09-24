@@ -10,7 +10,7 @@
 
 html {
   font-size: 100%; /* don't know the use of this yet */
-  height: 1000px;
+  height: 100%;
 }
 
 body {
@@ -246,3 +246,7 @@ footer {
   }
 }
 /* end footer section */
+
+@media only screen and (max-width: 990){
+  
+}
