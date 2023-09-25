@@ -15,64 +15,78 @@
 
   <body>
     <!-- Header Section -->
-    <div class="header">
-      <div class="logo-box">
-        <img id="logo" src="./assets/img/logo.png" width="50px" height="50px" />
-        <span style="color: azure; font-size: 1.8rem">ARTCITY</span>
+    <div id="header">
+
+      <div id="header_left">
+        <img src="./assets/img/logo.png" width="70px" height="70px" />
+        <h1
+        class="header_logo_text">ARTCITY</h1>
+
+        <ul class="nav">
+          <li>
+            <a href="https://www.singulart.com/en/painting" target="_blank">
+            <h2>ARTWORK</h2>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.singulart.com/en/discover" target="_blank">
+            <h2>DISCOVER</h2>
+            </a>
+          </li>
+        </ul>
       </div>
 
-      <div class="art-work">
-        <a href="https://www.singulart.com/en/painting" target="_blank"
-          ><h2>ARTWORK</h2></a
-        >
+      <div id="header_right">
+        <div id="search-bar">
+          <form class="search-form" action="">
+            <input
+              type="text"
+              placeholder="Search category, topics, artist..."
+              name="q"
+            />
+            <button class="search-submit" type="submit">
+              <img src="./assets/img/icon.png" alt="" />
+            </button>
+          </form>
+        </div>
       </div>
 
-      <div class="discover">
-        <a href="https://www.singulart.com/en/discover" target="_blank"
-          ><h2>DISCOVER</h2></a
-        >
-      </div>
-
-      <div id="search-bar">
-        <form class="search-form" action="">
-          <input
-            type="text"
-            placeholder="Search category, topics, artist..."
-            name="q"
-          />
-          <button class="search-submit" type="submit">
-            <img src="./assets/img/icon.png" alt="" />
-          </button>
-        </form>
-      </div>
     </div>
 
     <!-- Body Section -->
-    <div></div>
+    <div id="content">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
     <!-- Footer Section-->
+
     <footer>
-      <div class="footer-container">
+      <div id="footer-container">
         <div class="socialIcons">
-          <a href=""><i class="fa-brands fa-facebook"></i></a>
-          <a href=""><i class="fa-brands fa-instagram"></i></a>
-          <a href=""><i class="fa-brands fa-twitter"></i></a>
-          <a href=""><i class="fa-brands fa-google-plus"></i></a>
-          <a href=""><i class="fa-brands fa-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+          <a href="#"><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
 
       <div class="footerNav">
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">News</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact Us</a></li>
-          <li><a href="">Our team</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Our team</a></li>
         </ul>
       </div>
       <div class="footerBottom">
         <p>
-          Copyright &copy;2023; Designed by <span class="designer">Kai</span>
+          Copyright &copy;2023; Designed by <span class="designer">Kha</span> - <span class="designer">Trong</span>
         </p>
       </div>
     </footer>

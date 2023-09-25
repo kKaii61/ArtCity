@@ -14,79 +14,56 @@ html {
 }
 
 body {
-  min-height: 100%;
+  height: 100%;
 }
 
 /* Phan Header */
 
-.logo-box {
+#header {
+  display: block;
+
+}
+
+#header_left {
   width: auto;
-  height: 72px;
+  display: flex;
+}
+
+#header_right {
+  width: auto;
   display: flex;
   align-items: center;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 999; /* for moving this class infront of others properties or stuffs idk */
+  justify-content: right;
 }
 
-.header {
-  width: 100%;
-  height: 72px;
-  background-color: #000;
-  display: flex;
-  position: fixed;
-  align-items: center;
-  justify-content: center;
-}
-
-#logo {
-  padding: 1em 1em 1em 1em;
-}
-.art-work,
-.discover {
-  padding: 8px;
-  height: max-content;
-  width: max-content;
-  display: flex;
-  justify-content: space-around;
-  text-decoration: none;
-  text-decoration-color: #000;
-}
-
-.art-work a {
+/* #art-work a {
   color: #fff;
   padding: 5px;
   text-decoration: none;
 }
 
-.art-work a:active {
+#art-work a:active, #art-work a:visited {
   text-decoration: none;
 }
 
-.art-work a:visited {
-  text-decoration: none;
-}
-
-.discover a {
+#discover a {
   color: #fff;
   padding: 5px;
   text-decoration: none;
 }
 
-.discover a:active {
+#discover a:active, #discover a:visited {
   text-decoration: none;
-}
+} */
 
-.discover a:visited {
-  text-decoration: none;
-}
+
+/* Keep */
 
 #search-bar {
-  height: 2.8rem;
+  height: 100%;
   width: 33%;
   background: rgba(0, 0, 0, 0.8);
-  display: flex;
+  display: inline-block;
   align-items: center;
   border-radius: 60px;
   padding: 1rem 2rem;
@@ -134,6 +111,24 @@ button.search-submit {
 
 /* END OF HEADER */
 
+/* Body section */
+
+#content .box {
+  display: relative;
+  height: 400px;
+  background-color: aqua;
+}
+
+
+
+
+/* end of body */
+
+
+
+
+
+
 /* Footer section */
 
 footer {
@@ -143,14 +138,15 @@ footer {
   top: 100%;
 }
 
-.footer-container {
+#footer-container {
   width: 100%;
-  padding: 70px 30px 20px;
+  padding: 25px 20px;
 }
 
 .socialIcons {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .socialIcons a {
