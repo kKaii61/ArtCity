@@ -1,94 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>ArtCity | Place For Your Arts Going Worldwide</title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./assets/css/index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-  </head>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>ArtCity | Place For Your Arts Going Worldwide</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        />
+        <!-- Font chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
 
-  <body>
-    <!-- Header Section -->
-    <div id="header">
+    <body>
+        <div class="main">
+            <!-- Header Section -->
+            <header class="header">
+                <div id="header_left">
+                    <img
+                        src="./assets/img/logo.png"
+                        width="70px"
+                        height="70px"
+                    />
+                    <h1 class="header_logo_text">ARTCITY</h1>
 
-      <div id="header_left">
-        <img src="./assets/img/logo.png" width="70px" height="70px" />
-        <h1
-        class="header_logo_text">ARTCITY</h1>
+                    <ul class="nav">
+                        <li>
+                            <a
+                                href="https://www.singulart.com/en/painting"
+                                target="_blank"
+                            >
+                                <h2>ARTWORK</h2>
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.singulart.com/en/discover"
+                                target="_blank"
+                            >
+                                <h2>DISCOVER</h2>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
 
-        <ul class="nav">
-          <li>
-            <a href="https://www.singulart.com/en/painting" target="_blank">
-            <h2>ARTWORK</h2>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.singulart.com/en/discover" target="_blank">
-            <h2>DISCOVER</h2>
-            </a>
-          </li>
-        </ul>
-      </div>
+                <div id="header_right">
+                    <div id="search-bar">
+                        <form class="search-form" action="">
+                            <input
+                                type="text"
+                                placeholder="Search category, topics, artist..."
+                                name="q"
+                            />
+                            <button class="search-submit" type="submit">
+                                <img src="./assets/img/icon.png" alt="" />
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </header>
 
-      <div id="header_right">
-        <div id="search-bar">
-          <form class="search-form" action="">
-            <input
-              type="text"
-              placeholder="Search category, topics, artist..."
-              name="q"
-            />
-            <button class="search-submit" type="submit">
-              <img src="./assets/img/icon.png" alt="" />
-            </button>
-          </form>
+            <!-- Body Section -->
+            <div class="container">
+                <div>
+                    <p style="height: 2000px">
+                        <!--Cái này để đẩy Header vs Footer ra cho dễ nhìn :D-->
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Nisi, modi harum ipsa consequuntur dignissimos
+                        adipisci praesentium, sequi unde commodi aspernatur
+                        facilis qui. Expedita ad quisquam iure eos
+                        necessitatibus architecto consequatur?
+                    </p>
+                </div>
+            </div>
+
+            <!-- Footer Section-->
+            <footer class="footer">
+                <div id="footer-container">
+                    <div class="socialIcons">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our team</a></li>
+                    </ul>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        Copyright &copy;2023; Designed by
+                        <span class="designer">Kha</span> -
+                        <span class="designer">Trong</span>
+                    </p>
+                </div>
+            </footer>
         </div>
-      </div>
-
-    </div>
-
-    <!-- Body Section -->
-    <div id="content">
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
-
-    <!-- Footer Section-->
-
-    <footer>
-      <div id="footer-container">
-        <div class="socialIcons">
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          <a href="#"><i class="fa-brands fa-google-plus"></i></a>
-          <a href="#"><i class="fa-brands fa-youtube"></i></a>
-        </div>
-      </div>
-
-      <div class="footerNav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Our team</a></li>
-        </ul>
-      </div>
-      <div class="footerBottom">
-        <p>
-          Copyright &copy;2023; Designed by <span class="designer">Kha</span> - <span class="designer">Trong</span>
-        </p>
-      </div>
-    </footer>
-  </body>
+    </body>
 </html>
