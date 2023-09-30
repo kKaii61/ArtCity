@@ -16,7 +16,7 @@ html {
 }
 
 .grid {
-    width: 1200px; /*Kích thước max = 1200*/
+    width: 1300px; /*Kích thước max = 1200*/
     max-width: 100%; /*Nếu thiết bị có kích thước nhỏ hơn thì width sẽ = 100% màn hình đó*/
     margin: 0 auto; /*Căn giữa các khối*/
 }

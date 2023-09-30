@@ -26,47 +26,73 @@
     <body>
         <div class="main">
             <!-- Header Section -->
-            <header class="header">
-                <div id="header_left">
-                    <img
-                        src="./assets/img/logo.png"
-                        width="70px"
-                        height="70px"
-                    />
-                    <h1 class="header_logo_text">ARTCITY</h1>
 
-                    <ul class="nav">
-                        <li>
-                            <a
-                                href="https://www.singulart.com/en/painting"
-                                target="_blank"
-                            >
-                                <h2>ARTWORK</h2>
+            <header class="header__wrapper">
+                <div class="grid">
+                    <div class="header__content">
+                        <!-- Logo -->
+                        <div class="header__logo">
+                            <a href="" class="header__logo-link">
+                                <img
+                                    src="./assets/img/logo.png"
+                                    alt=""
+                                    class="header__logo-img"
+                                />
                             </a>
-                        </li>
-                        <li>
-                            <a
-                                href="https://www.singulart.com/en/discover"
-                                target="_blank"
-                            >
-                                <h2>DISCOVER</h2>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div id="header_right">
-                    <div id="search-bar">
-                        <form class="search-form" action="">
-                            <input
-                                type="text"
-                                placeholder="Search category, topics, artist..."
-                                name="q"
-                            />
-                            <button class="search-submit" type="submit">
-                                <img src="./assets/img/icon.png" alt="" />
-                            </button>
-                        </form>
+                            <h1 class="header_logo_text">ARTCITY</h1>
+                        </div>
+                        <!-- Discover -->
+                        <div class="header__discover">
+                            <nav class="header_nav">
+                                <ul class="header_nav-list">
+                                    <li class="header_nav-items">
+                                        <a class="header_nav-link" href="https://www.singulart.com/en/painting" target="_blank">
+                                            ARTWORK
+                                        </a>
+                                    </li>
+                                    <li class="header_nav-items">
+                                        <a class="header_nav-link" href="https://www.singulart.com/en/discover" target="_blank">
+                                            DISCOVER
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- Search -->
+                            <div class="header__search">
+                                <div class="header__search-bar">
+                                    <form class="form-input-container" action="">
+                                        <div class="form-input">
+                                            <div class="search-submit-icon">
+                                                <button class="search-submit-button" type="submit">
+                                                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                                                </button>
+                                            </div> 
+                                            <input class="search-input" type="search" placeholder="Search category, topics, artist..." name="q"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Quick access -->
+                        <div class="header__quick-access">
+                            <div class="secondary__nav">
+                                <div class="secondary__nav-item shopping-cart">
+                                    <a href="" class="secondary__nav-link">
+                                        <i class="fa-solid fa-bag-shopping"></i>
+                                    </a>
+                                </div>
+                                <div class="secondary__nav-item wishlist-menu">
+                                    <a href="" class="secondary__nav-link">
+                                        <i class="fa-regular fa-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="secondary__nav-item account">
+                                    <a href="" class="secondary__nav-link">
+                                        <i class="fa-regular fa-user"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </header>

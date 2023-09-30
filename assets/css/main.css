@@ -1,49 +1,191 @@
-/* 
-*T chuyển mấy cái CSS đặt về mặc đinh này sang base.css r, còn cái main.css này để bắt đầu CSS từng cái lại
-*/
-
-/* :root {
-  --primary: rgb(255, 255, 255);
-}
-* {
-  margin: 0;
-  padding: 0;//Da chuyen sang base.css
-  box-sizing: border-box;
-}
-html {
-  font-size: 100%; 
-  height: 100%;//Da chuyen sang base.css
-}
-body {
-  min-height: 100%;//Da chuyen sang base.css
-} */
-
-/* Phan Header */
-
-.logo-box {
-    width: auto;
-    height: 72px;
-    display: flex;
-    align-items: center;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999; /* for moving this class infront of others properties or stuffs idk */
-}
-
-.header {
-    width: 100%;
+/* Header section */
+header {
     height: 72px;
     background-color: #000;
-    display: flex;
-    position: fixed;
-    align-items: center;
-    justify-content: center;
 }
 
-#logo {
-    padding: 1em 1em 1em 1em;
+.header__content {
+    display: flex;
+    height: 72px;
 }
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    width: 395px;
+}
+
+.header__logo-img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.header_logo_text {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.header__discover {
+    display: flex;
+    min-width: 600px;
+}
+
+.header_nav {
+    display: flex;
+    align-items: center;
+}
+
+.header_nav-list {
+    list-style: none;
+}
+
+.header_nav-items {
+}
+
+.header_nav-items,
+.header_nav-link {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.4rem;
+    padding: 0 12px;
+    letter-spacing: 0.02rem;
+    line-height: 2.4rem;
+    text-transform: uppercase;
+}
+
+/*  */
+
+.header__search {
+    display: flex;
+    align-items: center;
+    min-width: 2rem;
+    margin-left: 1.6rem;
+    margin-right: 3.2rem;
+}
+
+.header__search-bar {
+    
+}
+
+.form-input-container {
+    background-color: #201f1e;
+
+
+}
+
+.form-input {
+    position: relative;
+    
+}
+
+
+.search-submit-icon {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-53%);
+    font-size: 1.6rem;
+    z-index: 1;
+    left: 1rem;
+}
+
+.search-submit-button {
+    background-color: #201f1e;
+    border: none;
+
+}
+
+.search-icon {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #dfdedc;
+}
+
+.search-input {
+    border-style: none;
+    background-color: #201f1e;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #dfdedc;
+    height: 4rem;
+    text-overflow: ellipsis;/*Thêm ... vào sau đoạn bị tràng*/
+    width: 100%;
+    padding-left: 4.8rem;
+}
+
+/* quick access */
+.header__quick-access {
+    display: flex;
+    align-items: center;
+    width: 388px;
+    justify-content: flex-end;
+    
+}
+
+.secondary__nav {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    height: 72px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.secondary__nav-item {
+    width: 5rem;
+}
+
+.secondary__nav-link {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    justify-content: center;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .art-work,
 .discover {
     padding: 8px;
@@ -106,22 +248,9 @@ input {
     width: max-content;
 }
 
-button.search-submit {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 60px;
-    width: 30px;
-    height: 30px;
-    border: none;
-    padding: 0;
-    backdrop-filter: blur(4px);
-    outline: none;
-}
 
-#search-bar .search-submit img {
-    width: 30px;
-    height: 30px;
-    padding: 5px;
-}
+
+
 
 #search-bar input {
     background: transparent;
