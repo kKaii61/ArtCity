@@ -146,29 +146,11 @@ header {
     text-decoration: none;
 }
 
-/* 02/10 fix footer social icons */
+/* Body Section */
 
-div.socialIcons fa-brands {
-    font-size: 24px; /* khuc nay gần như vô dụng vì kích thước auto cả nhưng ép ch chắc*/
-    padding: 2px; /* Same as above*/
+.body-container {
+    
 }
-
-div.socialIcons a {
-    width: 42px;
-    height: 42px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-div.socialIcons i {
-    padding: 0 !important;
-}
-
-/* nhin trng co ve center =)))))))*/
-
-
-
 
 
 
@@ -390,3 +372,27 @@ footer {
 
 @media only screen and (max-width: 990) {
 }
+
+
+
+/* 02/10 fix footer social icons */
+s
+div.socialIcons fa-brands {
+    font-size: 24px; /* khuc nay gần như vô dụng vì kích thước auto cả nhưng ép ch chắc*/
+    padding: 2px; /* Same as above*/
+}
+
+div.socialIcons a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.socialIcons i {
+    padding: 0 !important;
+}
+
+/* nhin trng co ve center =)))))))*/
+
