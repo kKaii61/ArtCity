@@ -13,6 +13,7 @@ header {
     display: flex;
     align-items: center;
     width: 395px;
+    margin: 0 0 0 10px; /* just added 02/10*/
 }
 
 .header__logo-img {
@@ -145,8 +146,26 @@ header {
     text-decoration: none;
 }
 
+/* 02/10 fix footer social icons */
 
+div.socialIcons fa-brands {
+    font-size: 24px;
+    padding: 2px;
+}
 
+div.socialIcons a {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.socialIcons i {
+    padding: 0 !important;
+}
+
+/* nhin trng co ve center =)))))))*/
 
 
 
