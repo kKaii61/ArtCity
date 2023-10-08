@@ -2,6 +2,7 @@
     --white-color: #fff;
     --black-color: #000;
     --text-color: #333;
+    --red-color: #ec1c24;
 }
 
 * {
@@ -16,7 +17,7 @@ html {
 }
 
 .grid {
-    width: 1300px; /*Kích thước max = 1200*/
+    width: 1400px; /*Kích thước max = 1200*/
     max-width: 100%; /*Nếu thiết bị có kích thước nhỏ hơn thì width sẽ = 100% màn hình đó*/
     margin: 0 auto; /*Căn giữa các khối*/
 }
@@ -28,4 +29,8 @@ html {
 .grid__row {
     display: flex;
     flex-wrap: wrap;
+}
+
+.noHover {
+    pointer-events: none;
 }
