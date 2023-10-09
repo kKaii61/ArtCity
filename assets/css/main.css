@@ -1,3 +1,11 @@
+html {
+
+}
+
+body {
+    padding: ;
+}
+
 /* Start: Header section */
 .sticky-top {
     position: sticky;
@@ -11,14 +19,17 @@
 
 .header-main_nav {
     height: 6.4rem;
-    padding: 0 2rem;
+    padding: 0 1.5rem;
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--gray-color);
+    box-shadow: 0 1px 3px var(--gray-color);
 }
 
 .header-logo {
-    width: 13rem;
-    height: auto;
+    display: flex;
+    height: 6.4em;
+    width: auto;
 }
 
 /* Discover */
@@ -29,6 +40,7 @@
 }
 
 .header-main_nav_list {
+    padding: 0 9.4px;;
     margin: 0;
     list-style: none;
     display: flex;
@@ -83,7 +95,8 @@
 }
 
 .subnav-item {
-
+    height: 40px;
+    line-height: 40px;
 }
 
 .subnav-link {
@@ -97,7 +110,7 @@
 
 /* Search icon */
 .header-search {
-
+    font-size: 2em;
 }
 
 .search-icon {
@@ -110,7 +123,18 @@
 }
 
 .btn-login {
-    
+    font-size: 1.4em;
+    margin: 0 5px;
+    padding: 0 6px;
+    height: 64px;
+    width: 85px;
+    border: none;
+    background-color: #fff;
+}
+
+.btn-login:hover {
+    border-bottom: 2px solid var(--red-color);
+    font-weight: 600!important;
 }
 
 /* End: Header section */
@@ -118,6 +142,7 @@
 /* Body Section */
 
 .body-container {
+    background-color: var(--white-color);
 
 }
 
@@ -149,9 +174,9 @@
 
 
 
+/* OLD CSS */
 
-
-.art-work,
+/* .art-work,
 .discover {
     padding: 8px;
     height: max-content;
@@ -213,10 +238,6 @@ input {
     width: max-content;
 }
 
-
-
-
-
 #search-bar input {
     background: transparent;
     flex: 1;
@@ -225,7 +246,7 @@ input {
     padding: 24px 20px;
     font-size: 20px;
     color: rgb(143, 87, 4);
-}
+} */
 
 /* END OF HEADER */
 
@@ -339,13 +360,12 @@ footer {
 }
 /* end footer section */
 
-@media only screen and (max-width: 990) {
-}
+/* @media only screen and (max-width: 990) {
+} */
 
 
 
 /* 02/10 fix footer social icons */
-s
 div.socialIcons fa-brands {
     font-size: 24px; /* khuc nay gần như vô dụng vì kích thước auto cả nhưng ép ch chắc*/
     padding: 2px; /* Same as above*/
