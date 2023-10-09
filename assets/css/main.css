@@ -321,7 +321,7 @@ div.socialIcons a {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    box-shadow: 3px 1px 5px var(--gray-color);
+    box-shadow: 0 0 6px 1.5px var(--gray-color);
 }
 
 div.socialIcons a:hover {
