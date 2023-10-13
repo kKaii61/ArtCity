@@ -6,13 +6,18 @@
         <title>ArtCity | Place For Your Arts Going Worldwide</title>
         <meta name="description" content="" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+
         <!-- JavaScript-->
         <script type="text/javascript" src="assets/js/main.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
         <!-- Font chữ -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -100,23 +105,38 @@
 
 
             </div>
-            
+
             <!-- Body Section -->
-            <div class="body-container" style="height: 1000px; margin: 0;">
-                <div>
-                    <p style="margin: 0;">
-                        <!--Cái này để đẩy Header vs Footer ra cho dễ nhìn :D-->
-                        Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Nisi, modi harum ipsa consequuntur dignissimos
-                        adipisci praesentium, sequi unde commodi aspernatur
-                        facilis qui. Expedita ad quisquam iure eos
-                        necessitatibus architecto consequatur?
-                    </p>
+
+            <div class="body-container" style="height: 1000px;">
+
+
+                <div class="carousel">
+                    <div class="carousel-sub-tlt">
+                        <h2>
+                            Curated Collections
+                        </h2>
+                    </div>
+
+                    <button class="btn-left" onclick="plusDivs(-1)"><i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="btn-right" onclick="plusDivs(+1)"><i class="fa-solid fa-arrow-right"></i></button>
+
+                    <div class="slideshow-container">
+                        <div class="gallery-cell"><a href=""><img src="./assets/img/1.png" alt=""></a></div>
+                        <div class="gallery-cell"><a href=""><img src="./assets/img/2.jpg" alt=""></a></div>
+                        <div class="gallery-cell"><a href=""><img src="./assets/img/3.jpg" alt=""></a></div>
+                        <div class="gallery-cell"><a href=""><img src="./assets/img/4.jpg" alt=""></a></div>
+                        <div class="gallery-cell"><a href=""><img src="./assets/img/5.jpg" alt=""></a></div>
+                        <div class="gallery-cell"><a href=""><img src="./assets/img/6.jpg" alt=""></a></div>
+                    </div>
+                    
                 </div>
+
+
             </div>
 
             <!-- Footer Section-->
-            <footer class="footer">
+            <footer class="footer grid">
                 <div id="footer-container">
                     <div class="socialIcons">
                         <a href="#"><i class="fa-brands fa-facebook"></i></a>

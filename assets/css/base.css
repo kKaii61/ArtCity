@@ -18,6 +18,10 @@ html {
     box-sizing: border-box;
 }
 
+body {
+    width: 100%;
+}
+
 .grid {
     width: 1400px; /*Kích thước max = 1200*/
     max-width: 100%; /*Nếu thiết bị có kích thước nhỏ hơn thì width sẽ = 100% màn hình đó*/
