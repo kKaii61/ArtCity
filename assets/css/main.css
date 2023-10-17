@@ -133,10 +133,13 @@
 
 /* End: Header section */
 
+
+
+
 /* Body Section */
 
 .carousel {
-    padding: 0 20px;
+    padding: 20px 20px;
     display: relative;
     align-items: center;
     justify-content: center;
@@ -144,35 +147,38 @@
 
 .carousel .btn-left, .btn-right {
     position: absolute;
-    font-size: 35px;
+    font-size: 30px;
     border-radius: 50%;
     line-height: normal;
     text-align: center;
     padding-top: 2.2px;
-    height: 45px;
-    width: 45px;
+    height: 40px;
+    width: 40px;
     border: none;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px var(--gray-color);
+    background-color: rgba(255, 255, 255, 0);
 }
 
 .carousel .btn-left:hover, .btn-right:hover {
-    color: #300eeb;
+    color: #3731d3;
+    cursor: pointer;
+    user-select: none;
+    background-color: rgba(24, 20, 26, 0.522);
+    transition: 0.4s;
 }
 
 .carousel .btn-left {
-    top: 50%;
-    left: -12px;
+    top: 300px;
+    left: -2px;
 }
 
 
 .carousel .btn-right{
-top: 50%;
-right: -12px;
+top: 300px;
+right: -2px;
 }
 
 .carousel i {
-    opacity: 0.5;
+    opacity: 1;
 }
 
 
@@ -186,7 +192,6 @@ right: -12px;
     display: flex;
     gap: 40px;
     align-items: center;
-    justify-self: center;
 }
 
 .slideshow-container .gallery-cell {
@@ -204,6 +209,7 @@ right: -12px;
 }
 
 .carousel .carousel-sub-tlt h2 {
+    font-size: 2em;
     text-transform: uppercase;
     display: inline-block;
     font-weight: 600;
@@ -211,15 +217,10 @@ right: -12px;
 }
 
 
-ul li{
+.header-discover ul li{
     list-style-type: none;
     display: inline;
 }
-
-
-
-
-
 
 
 
