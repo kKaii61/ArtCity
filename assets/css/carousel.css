@@ -1,8 +1,8 @@
 .slideshow-container {
     max-width: 2000px;
     width: 100%;
-    min-height: 100vh;
-    height: max-content;
+    min-height: 450px;
+    height: min-content;
     position: relative;
     padding: 5px 80px;
     display: flex;
