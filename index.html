@@ -10,11 +10,12 @@
         <!-- JavaScript-->
         <script type="text/javascript" src="assets/js/main.js"></script>
         <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-
+        <script type="text/javascript" src="assets/js/carousel.js" defer></script>
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="/assets/css/carousel.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
@@ -108,42 +109,71 @@
 
             <!-- Body Section -->
 
-            <div class="body-container" style="height: 1000px;">
+            <div class="body-container">
 
+                <!--START CAROUSEL-->
+                <div class="slideshow-container">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <div class="carousel">
 
-                <div class="carousel">
-                    <div class="carousel-sub-tlt">
-                        <h2>
-                            Curated Collections
-                        </h2>
+                        <div class="carousel-slide">
+                            <div class="image">
+                                <img src="/assets/img/1.png" alt="">
+                            </div>
+                            <div class="title">
+                                <h2>Dark Silent City</h2>
+                                <span>Testing</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="image">
+                                <img src="/assets/img/2.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                <h2>A Summer Road</h2>
+                                <span>Testing</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="image">
+                                <img src="/assets/img/3.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                <h2>The Fall of Waterfall</h2>
+                                <span>Testing</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="image">
+                                <img src="/assets/img/4.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                <h2>Construction Side</h2>
+                                <span>Testing</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="image">
+                                <img src="/assets/img/5.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                <h2>Japanese Wavetide</h2>
+                                <span>Testing</span>
+                            </div>
+                        </div>
+                        <div class="carousel-slide">
+                            <div class="image">
+                                <img src="/assets/img/6.jpg" alt="">
+                            </div>
+                            <div class="title">
+                                <h2>Lovely Afternoon</h2>
+                                <span>Testing</span>
+                            </div>
+                        </div>
                     </div>
-
-                    <button class="btn-left" onclick="plusSlides(-1)"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="btn-right" onclick="plusSlides(1)"><i class="fa-solid fa-arrow-right"></i></button>
-
-                    <div class="slideshow-container">
-                        <div class="gallery-cell">
-                            <a href="">
-                                <img src="./assets/img/1.png" alt=""></a></div>
-                        <div class="gallery-cell">
-                            <a href="">
-                                <img src="./assets/img/2.jpg" alt=""></a></div>
-                        <div class="gallery-cell">
-                            <a href="">
-                                <img src="./assets/img/3.jpg" alt=""></a></div>
-                        <div class="gallery-cell">
-                            <a href="">
-                                <img src="./assets/img/4.jpg" alt=""></a></div>
-                        <div class="gallery-cell">
-                            <a href="">
-                                <img src="./assets/img/5.jpg" alt=""></a></div>
-                        <div class="gallery-cell">
-                            <a href="">
-                                <img src="./assets/img/6.jpg" alt=""></a></div>
-                    </div>
-                    
+                    <i id="right" class="fa-solid fa-angle-right"></i>
                 </div>
-
+                <!--END CAROUSEL-->
 
             </div>
 
