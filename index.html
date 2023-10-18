@@ -8,9 +8,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <!-- JavaScript-->
-        <script type="text/javascript" src="assets/js/main.js"></script>
-        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
-        <script type="text/javascript" src="assets/js/carousel.js" defer></script>
+        <script src="./assets/js/script.js"></script>
+
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
@@ -160,7 +159,6 @@
                     <div class="slideshow-container">
                         <i id="left" class="fa-solid fa-angle-left"></i>
                         <div class="carousel">
-
                             <div class="carousel-slide">
                                 <div class="image">
                                     <img src="/assets/img/1.png" alt="">
@@ -253,36 +251,5 @@
                 </div>
             </footer>
         </div>
-
-        <script>
-            // Automatic Slideshow - change image every 4 seconds
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("banner-item");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-                myIndex++;
-                if (myIndex > x.length) {myIndex = 1}    
-                x[myIndex-1].style.display = "block";  
-                setTimeout(carousel, 4000);    
-            }
-
-            
-            const carousel = document.querySelector(".carousel");
-            const arrowBtns = document.querySelectorAll(".slideshow-container i");
-            const firstCardWidth = carousel.querySelector(".carousel-slide").offsetWidth;
-
-            let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-
-            arrowBtns.forEach(btn => {
-            btn.addEventListener("click", () => {
-            carousel.scrollLeft += btn.id === "left" ?  Math.ceil(-firstCardWidth) : Math.ceil(firstCardWidth);
-            })
-            });
-        </script>
     </body>
 </html>
