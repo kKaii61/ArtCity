@@ -110,70 +110,116 @@
             <!-- Body Section -->
 
             <div class="body-container">
+                <div class="grid">
+                    <!-- START BANNER -->
+                    <div class="banner-container">
+                        <ul class="banner-list">
+                            <li class="banner-item">
+                                <a href="" class="banner-link">
+                                    <img src="/assets/img/index-image.jpg" alt="" class="banner-img">
+                                </a>
+                            </li>
+                            <li class="banner-item">
+                                <a href="" class="banner-link">
+                                    <img src="/assets/img/index-image-01.jpg" alt="" class="banner-img">
+                                </a>
+                            </li>
+                            <li class="banner-item">
+                                <a href="" class="banner-link">
+                                    <img src="/assets/img/index-image-02.jpg" alt="" class="banner-img">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+  
+                    <!-- END BANNER -->
 
-                <!--START CAROUSEL-->
-                <div class="slideshow-container">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <div class="carousel">
+                    <!-- START CATEGORY -->
+                    <div class="category">
+                        <div class="home-category">
+                            <h2>EXPLORE BY CATEGORY</h2>
+                            <ul class="category-list">
+                                <li class="category-item">
+                                    <a href="" class="category-item-link">
+                                        <div class="category-img">
 
-                        <div class="carousel-slide">
-                            <div class="image">
-                                <img src="/assets/img/1.png" alt="">
-                            </div>
-                            <div class="title">
-                                <h2>Dark Silent City</h2>
-                                <span>Testing</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="image">
-                                <img src="/assets/img/2.jpg" alt="">
-                            </div>
-                            <div class="title">
-                                <h2>A Summer Road</h2>
-                                <span>Testing</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="image">
-                                <img src="/assets/img/3.jpg" alt="">
-                            </div>
-                            <div class="title">
-                                <h2>The Fall of Waterfall</h2>
-                                <span>Testing</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="image">
-                                <img src="/assets/img/4.jpg" alt="">
-                            </div>
-                            <div class="title">
-                                <h2>Construction Side</h2>
-                                <span>Testing</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="image">
-                                <img src="/assets/img/5.jpg" alt="">
-                            </div>
-                            <div class="title">
-                                <h2>Japanese Wavetide</h2>
-                                <span>Testing</span>
-                            </div>
-                        </div>
-                        <div class="carousel-slide">
-                            <div class="image">
-                                <img src="/assets/img/6.jpg" alt="">
-                            </div>
-                            <div class="title">
-                                <h2>Lovely Afternoon</h2>
-                                <span>Testing</span>
-                            </div>
+                                        </div>
+                                        <div class="category-title">
+                                            
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
+                    <!-- END CATEGORY -->
+
+
+
+                    <!--START CAROUSEL-->
+                    <div class="slideshow-container">
+                        <i id="left" class="fa-solid fa-angle-left"></i>
+                        <div class="carousel">
+
+                            <div class="carousel-slide">
+                                <div class="image">
+                                    <img src="/assets/img/1.png" alt="">
+                                </div>
+                                <div class="title">
+                                    <h2>Dark Silent City</h2>
+                                    <span>Testing</span>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="image">
+                                    <img src="/assets/img/2.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h2>A Summer Road</h2>
+                                    <span>Testing</span>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="image">
+                                    <img src="/assets/img/3.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h2>The Fall of Waterfall</h2>
+                                    <span>Testing</span>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="image">
+                                    <img src="/assets/img/4.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h2>Construction Side</h2>
+                                    <span>Testing</span>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="image">
+                                    <img src="/assets/img/5.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h2>Japanese Wavetide</h2>
+                                    <span>Testing</span>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="image">
+                                    <img src="/assets/img/6.jpg" alt="">
+                                </div>
+                                <div class="title">
+                                    <h2>Lovely Afternoon</h2>
+                                    <span>Testing</span>
+                                </div>
+                            </div>
+                        </div>
+                        <i id="right" class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <!--END CAROUSEL-->
                 </div>
-                <!--END CAROUSEL-->
 
             </div>
 
@@ -207,5 +253,36 @@
                 </div>
             </footer>
         </div>
+
+        <script>
+            // Automatic Slideshow - change image every 4 seconds
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("banner-item");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                }
+                myIndex++;
+                if (myIndex > x.length) {myIndex = 1}    
+                x[myIndex-1].style.display = "block";  
+                setTimeout(carousel, 4000);    
+            }
+
+            
+            const carousel = document.querySelector(".carousel");
+            const arrowBtns = document.querySelectorAll(".slideshow-container i");
+            const firstCardWidth = carousel.querySelector(".carousel-slide").offsetWidth;
+
+            let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+            arrowBtns.forEach(btn => {
+            btn.addEventListener("click", () => {
+            carousel.scrollLeft += btn.id === "left" ?  Math.ceil(-firstCardWidth) : Math.ceil(firstCardWidth);
+            })
+            });
+        </script>
     </body>
 </html>

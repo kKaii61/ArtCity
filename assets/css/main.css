@@ -149,11 +149,31 @@
     background-color: var(--white-color);
     display: flex;
     height: auto;
+    width: 1200px;
+    margin: 0 auto;
 }
 
+/* START BANNER CSS */
+.banner-container {
+    margin-top: 40px;
+}
 
+.banner-list {
+    margin: 0;
+    padding: 0;
+}
 
+.banner-item {
+   
+    display: none;
+}
 
+.banner-img {
+    height: 405px;
+    width: 100%;
+}
+
+/* END BANNER CSS */
 
 
 
