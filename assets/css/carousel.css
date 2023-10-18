@@ -1,10 +1,9 @@
 .slideshow-container {
-    max-width: 2000px;
+    max-width: 1500px;
     width: 100%;
     min-height: 450px;
     height: min-content;
     position: relative;
-    padding: 5px 80px;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -12,9 +11,10 @@
 
 .slideshow-container .carousel {
     /* margin: 0 0 0 42px; */
+    width: auto;
     display: grid;
     position: relative;
-    /* justify-content: center; */
+    justify-items: center;
     grid-auto-flow: column;
     grid-auto-columns: calc(100% / 3 - 10px);
     gap: 16px;
@@ -25,6 +25,7 @@
 }
 
 .slideshow-container i {
+    z-index: 1;
     height: 50px;
     width: 50px;
     font-size: 5rem;
@@ -33,18 +34,18 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-180%);
+    transform: translateY(-125%);
     background: rgb(255, 255, 255);
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 
 .slideshow-container #left {
-    left: 12px;
+    left: -12px;
 }
 
 .slideshow-container #right {
-    right: 12px;
+    right: -12px;
 }
 
 .carousel::-webkit-scrollbar{
@@ -52,7 +53,9 @@
 }
 
 .carousel .carousel-slide {
-    display: flex;
+    width: 350px;
+    height: auto;
+    display: block;
     justify-content: center;
     flex-direction: column;
 }
@@ -73,6 +76,11 @@
     height: 350px;
     object-fit: cover;
     border-radius: 25px;
+}
+
+.carousel-slide .title {
+    display: flex;
+    flex-direction: column;
 }
 
 .carousel-slide .title h2 {
