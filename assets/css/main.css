@@ -88,14 +88,9 @@
     display: none;
 }
 
-.subnav-item:hover {
+.subnav-link:hover {
     background-color: #ccc;
     cursor: pointer;
-}
-
-.subnav-item {
-    height: 40px;
-    line-height: 40px;
 }
 
 .subnav-link {
@@ -103,9 +98,9 @@
     text-decoration: none;
     color: var(--text-color);
     font-size: 14px;
+    width: 100%;
     font-weight: 400;
-    padding: 10px 16px;
-
+    padding: 0 15px;
 }
 
 /* Search icon */

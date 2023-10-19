@@ -1,12 +1,12 @@
 .slideshow-container {
     max-width: 1500px;
     width: 100%;
-    min-height: 450px;
+    min-height: 500px;
     height: min-content;
     position: relative;
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-items: center;
 }
 
 .slideshow-container .carousel {
@@ -34,7 +34,7 @@
     cursor: pointer;
     position: absolute;
     top: 50%;
-    transform: translateY(-125%);
+    transform: translateY(-160%);
     background: rgb(255, 255, 255);
     border-radius: 50%;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -67,6 +67,7 @@
 }
 
 .carousel-slide .image {
+    margin: 5px 0;
     width: 350px;
     height: 350px;
 }
