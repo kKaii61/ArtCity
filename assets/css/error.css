@@ -145,3 +145,9 @@
 .wave-bottom .shape-fill {
     fill: #0e1f7ecc;
 }
+
+.eye {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
