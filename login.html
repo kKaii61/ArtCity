@@ -11,6 +11,7 @@
         <script src="./assets/js/script.js" defer></script>
 
         <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/login.css">
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/main.css" />
@@ -90,7 +91,7 @@
                             </div>
                             <!-- Header account -->
                             <div class="header-acc">
-                                <a href="./login.html" style="cursor: pointer;">
+                                <a href="">
                                     <button class="btn-login">Login</button>
                                 </a>
                             </div>
@@ -107,118 +108,87 @@
             </div>
 
             <!-- Body Section -->
-
             <div class="body-container">
-                <div class="grid">
-                    <!-- START BANNER -->
-                    <div class="banner-container">
-                        <ul class="banner-list">
-                            <li class="banner-item">
-                                <a href="" class="banner-link">
-                                    <img src="/assets/img/index-image.jpg" alt="" class="banner-img">
-                                </a>
-                            </li>
-                            <li class="banner-item">
-                                <a href="" class="banner-link">
-                                    <img src="/assets/img/index-image-01.jpg" alt="" class="banner-img">
-                                </a>
-                            </li>
-                            <li class="banner-item">
-                                <a href="" class="banner-link">
-                                    <img src="/assets/img/index-image-02.jpg" alt="" class="banner-img">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-  
-                    <!-- END BANNER -->
-
-                    <!-- START CATEGORY -->
-                    <div class="category">
-                        <div class="home-category">
-                            <h2>EXPLORE BY CATEGORY</h2>
-                            <ul class="category-list">
-                                <li class="category-item">
-                                    <a href="" class="category-item-link">
-                                        <div class="category-img">
-
+                <div class="login-flex">
+                    <div class="login-innerflex">
+                        <div class="login-container">
+                            <div class="login-img">
+                                <img src="./assets/img/login.jpg" alt="" width="548px">
+                            </div>
+                            <div class="login-form">
+                                <div class="form-container">
+                                    <h1 class="login-header">Login</h1>
+                                    <div class="login-social">
+                                        <div class="google-login">
+                                            <button class="social-btn">
+                                                <img src="./assets/img/google-icon.svg" alt="" width="18px" height="18px">
+                                                <span class="button-text">Login with Google</span>
+                                            </button>
                                         </div>
-                                        <div class="category-title">
-                                            
+                                        <div class="facebook-login">
+                                            <button class="social-btn">
+                                                <img src="./assets/img/facebook-icon.svg" alt="" width="18px" height="18px">
+                                                <span class="button-text">Login with Facebook</span>
+                                            </button>
                                         </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- END CATEGORY -->
-
-
-
-                    <!--START CAROUSEL-->
-                    <div class="slideshow-container">
-                        <i id="left" class="fa-solid fa-angle-left"></i>
-                        <div class="carousel">
-                            <div class="carousel-slide">
-                                <div class="image">
-                                    <img src="/assets/img/1.png" alt="">
-                                </div>
-                                <div class="title">
-                                    <h2>Dark Silent City</h2>
-                                    <span>Testing</span>
-                                </div>
-                            </div>
-                            <div class="carousel-slide">
-                                <div class="image">
-                                    <img src="/assets/img/2.jpg" alt="">
-                                </div>
-                                <div class="title">
-                                    <h2>A Summer Road</h2>
-                                    <span>Testing</span>
-                                </div>
-                            </div>
-                            <div class="carousel-slide">
-                                <div class="image">
-                                    <img src="/assets/img/3.jpg" alt="">
-                                </div>
-                                <div class="title">
-                                    <h2>The Fall of Waterfall</h2>
-                                    <span>Testing</span>
-                                </div>
-                            </div>
-                            <div class="carousel-slide">
-                                <div class="image">
-                                    <img src="/assets/img/4.jpg" alt="">
-                                </div>
-                                <div class="title">
-                                    <h2>Construction Side</h2>
-                                    <span>Testing</span>
-                                </div>
-                            </div>
-                            <div class="carousel-slide">
-                                <div class="image">
-                                    <img src="/assets/img/5.jpg" alt="">
-                                </div>
-                                <div class="title">
-                                    <h2>Japanese Wavetide</h2>
-                                    <span>Testing</span>
-                                </div>
-                            </div>
-                            <div class="carousel-slide">
-                                <div class="image">
-                                    <img src="/assets/img/6.jpg" alt="">
-                                </div>
-                                <div class="title">
-                                    <h2>Lovely Afternoon</h2>
-                                    <span>Testing</span>
+                                    </div>
+                                    <div class="login-divider">
+                                        <span class="login-signdivd"></span>
+                                        <span class="login-divhead">Or Login Using Email</span>
+                                        <span class="login-signdivd"></span>
+                                    </div>
+                                    <form action="" >
+                                        <div class="login-email">
+                                            <div class="login-titlehead">
+                                                <span class="log-para">Email Address</span>
+                                            </div>
+                                            <input type="email" class="log-textfield" required>
+                                            <span class="login-icon">
+                                                <i class="fa-regular fa-envelope"></i>
+                                            </span>
+                                        </div>
+                                        <div class="login-password">
+                                            <div class="login-titlehead">
+                                                <span class="log-para">Password</span>
+                                                <span class="log-para" style="cursor: pointer;">Forgot Password?</span>
+                                            </div>
+                                            <div class="tooltip-signup">
+                                                <input type="password" class="log-password" required>
+                                            </div>
+                                            <span class="login-icon">
+                                                <i class="fa-regular fa-lock"></i>
+                                            </span>
+                                            <!-- <span>showpassword</span> -->
+                                        </div>
+                                        <div class="login-btn-container">
+                                            <button class="login-btn">Login</button>
+                                        </div>
+                                        <div class="login-already">
+                                            <span class="login-textblock">
+                                                Create your 
+                                                <strong>Collector</strong>
+                                                account
+                                            </span>
+                                            <span class="log-logregtext">
+                                                <span class="log-logregcolor">SignUp</span>
+                                            </span>
+                                        </div>
+                                        <div class="login-register">
+                                            <span class="login-textblock">
+                                                "Create your Seller "
+                                                <strong>Artist / Gallery</strong>
+                                                " account"
+                                            </span>
+                                            <span class="log-logregtext">
+                                                <span class="log-logregcolor">Register Now</span>
+                                            </span>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <i id="right" class="fa-solid fa-angle-right"></i>
                     </div>
-                    <!--END CAROUSEL-->
                 </div>
-
             </div>
 
             <!-- Footer Section-->
@@ -252,9 +222,6 @@
             </footer>
 
 
-            <!-- START LOGIN/sign-up -->
- 
-            <!-- END LOGIN/REGISTER -->
         </div>
     </body>
 </html>

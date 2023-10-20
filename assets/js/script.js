@@ -2,6 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     banner();
     carousel();
+    
 });
 
 var myIndex = 0;
@@ -29,3 +30,4 @@ function carousel() {
      })
     });
 }
+

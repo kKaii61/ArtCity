@@ -3,7 +3,7 @@
 .sticky-top {
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 600;
 }
 
 .header-container {
@@ -82,7 +82,7 @@
     background-color: #fff;
     box-shadow: 0 8px 16px #0003;
     list-style: none;
-    line-height: 6.4rem;
+    line-height: 5.4rem;
     padding: 0;
     top: 100%;
     display: none;
@@ -106,10 +106,12 @@
 /* Search icon */
 .header-search {
     font-size: 2em;
+    margin-right: 30px;
 }
 
 .search-icon {
-
+    color: #717171;
+    font-size: 24px;
 }
 
 /* Login/signup */
@@ -119,10 +121,8 @@
 
 .btn-login {
     font-size: 1.4em;
-    margin: 0 5px;
-    padding: 0 6px;
+    padding: 0 10px;
     height: 64px;
-    width: 85px;
     border: none;
     background-color: #fff;
 }
@@ -173,6 +173,9 @@
 
 
 
+/* START login/signup */
+
+/* END login/signup */
 
 
 
@@ -180,93 +183,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* OLD CSS */
-
-/* .art-work,
-.discover {
-    padding: 8px;
-    height: max-content;
-    width: max-content;
-    display: flex;
-    justify-content: space-around;
-    text-decoration: none;
-    text-decoration-color: #000;
-}
-
-.art-work a {
-    color: #fff;
-    padding: 5px;
-    text-decoration: none;
-}
-
-.art-work a:active {
-    text-decoration: none;
-}
-
-.art-work a:visited {
-    text-decoration: none;
-}
-
-.discover a {
-    color: #fff;
-    padding: 5px;
-    text-decoration: none;
-}
-
-.discover a:active {
-    text-decoration: none;
-}
-
-.discover a:visited {
-    text-decoration: none;
-}
-
-#search-bar {
-    height: 2.8rem;
-    width: 33%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    align-items: center;
-    border-radius: 60px;
-    padding: 1rem 2rem;
-    backdrop-filter: blur(4px);
-}
-
-.search-form {
-    width: 100%;
-    padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-input {
-    width: max-content;
-}
-
-#search-bar input {
-    background: transparent;
-    flex: 1;
-    border: 0;
-    outline: none;
-    padding: 24px 20px;
-    font-size: 20px;
-    color: rgb(143, 87, 4);
-} */
 
 
 
@@ -292,14 +208,14 @@ footer {
     padding: 70px 30px 20px;
 }
 
-.socialIcons {
+.social-container {
     border-top: 1px solid var(--gray-color);
     box-shadow: 0 1px 3px var(--gray-color) inset;
     display: flex;
     justify-content: center;
 }
 
-.socialIcons a {
+.social-container a {
     text-decoration: none;
     padding: 10px;
     color: black;
@@ -308,7 +224,7 @@ footer {
     font-size: 1.5em;
 }
 
-.socialIcons a i {
+.social-container a i {
     font-size: 2em;
     color: black;
     opacity: 0.9;
@@ -325,7 +241,7 @@ footer {
     transition: 0.6s;
 } */
 
-.socialIcons a:hover i {
+.social-container a:hover i {
     color: #ffffff;
     transition: 0.5s;
 }
@@ -349,7 +265,7 @@ footer {
     transition: 0.5s;
 }
 
-div.socialIcons a {
+div.social-container a {
     width: 42px;
     height: 42px;
     display: flex;
@@ -359,7 +275,7 @@ div.socialIcons a {
     box-shadow: 0 0 6px 1.5px var(--gray-color);
 }
 
-div.socialIcons a:hover {
+div.social-container a:hover {
     background-color: radial-gradient( yellow, orange, pink);
     background-image: linear-gradient(135deg, rgb(18, 4, 214), rgb(124, 16, 167) ,yellow);
     opacity: 0.5;
@@ -417,14 +333,14 @@ div.socialIcons a:hover {
 
 
 /* 02/10 fix footer social icons */
-div.socialIcons fa-brands {
+div.social-container fa-brands {
     font-size: 24px; /* khuc nay gần như vô dụng vì kích thước auto cả nhưng ép ch chắc*/
     padding: 2px; /* Same as above*/
 }
 
 
 
-div.socialIcons i {
+div.social-container i {
     padding: 0 !important;
 }
 
