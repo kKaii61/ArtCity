@@ -1,16 +1,16 @@
-.login-flex {
+.signup-flex {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.login-innerflex {
+.signup-innerflex {
     flex-basis: 1200px;
     display: flex;
     justify-content: center;
 }
 
-.login-container {
+.signup-container {
     width: 1100px;
     border: 1px solid var(--gray-color);
     border-radius: 0 10px 10px 0;
@@ -20,12 +20,12 @@
     margin-top: 40px;
 }
 
-.login-form {
+.signup-form {
     width: 548px;
     padding: 40px 50px 40px 112px;
 }
 
-.login-header {
+.signup-header {
     margin-bottom: 0;
     font-size: 24px;
     color: var(--black-color);
@@ -33,11 +33,11 @@
     line-height: 29px;
 }
 
-.login-social {
+.signup-social {
     margin-top: 15px;
     display: flex;
-    justify-content: center;
     gap: 20px;
+    justify-content: center;
 }
 
 .social-btn {
@@ -54,19 +54,19 @@
 
 
 /*  */
-.login-divider {
+.signup-divider {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 34px;
 }
 
-.login-signdivd {
+.signup-signdivd {
     width: 99px;
     border: 1px solid var(--gray-color);
 }
 
-.login-divhead {
+.signup-divhead {
     font-size: 13px;
     color: var(--black-color);
 }
@@ -75,14 +75,15 @@
 form {
     width: 380px;
 }
-.login-password,
-.login-email {
+.signup-name,
+.signup-password,
+.signup-email {
     margin-top: 34px;
     position: relative;
     font-size: 14px;
 }
 
-.login-titlehead {
+.signup-titlehead {
     display: flex;
     justify-content: space-between;
 }
@@ -96,7 +97,7 @@ form {
     padding-left: 45px;
 }
 
-.login-icon {
+.signup-icon {
     position: absolute;
     text-align: center;
     color: var(--gray-color);
@@ -109,14 +110,14 @@ form {
 
 
 /*  */
-.login-btn-container {
+.signup-btn-container {
     margin-top: 34px;
     display: flex;
     justify-content: center;
 
 }
 
-.login-btn {
+.signup-btn {
     width: 289px;
     height: 45px;
     background: red;
@@ -127,14 +128,14 @@ form {
 
 
 /*  */
-.login-already {
+.signup-already {
     margin-top: 40px;
     margin-bottom: 24px;
     display: flex;
     justify-content: center;
 }
 
-.login-textblock {
+.signup-textblock {
     font-size: 14px;
     color: var(--colorLblack);
     cursor: pointer;
@@ -153,7 +154,7 @@ form {
     white-space: nowrap;
 }
 
-.login-register {
+.signup-register {
     display: flex;
     margin-top: 0;
     justify-content: center;

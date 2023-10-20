@@ -41,13 +41,14 @@
     font-size: 4rem;
     font-weight: 600;
     font-family: "Poppins", serif;
+    color: #fffffffd;
 }
 
 .left h4 {
     margin: 50px 0 0 0;
     text-align: center;
     font-size: 4.5rem;
-    color: #000000fd;
+    color: #fffffffd;
 }
 
 .left .btn-home {
@@ -91,7 +92,7 @@
 }
 
 .right img {
-    height: 300px;
+    height: 500px;
     width: auto;
     border-radius: 50%;
     z-index: 1;
