@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap&effect=shadow-multiple|3d-float);
+
+.error-main {
+    position: relative;
+    width: 100%;
+    height: 690px;
+    background: rgb(79, 98, 207);
+}
+
+.error-main .error-section {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-section .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 690px;
+    width: 80%;
+}
+
+.left .error-message {
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 140px;
+}
+
+.left p {
+    margin: 0;
+    text-transform: uppercase;
+    line-height: 100%;
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: "Poppins", serif;
+}
+
+.left h4 {
+    margin: 50px 0 0 0;
+    text-align: center;
+    font-size: 4.5rem;
+    color: #000000fd;
+}
+
+.left .btn-home {
+    position: absolute;
+    bottom: 80px;
+    display: block;
+    text-align: center;
+    width: auto;
+    height: 35px;
+    background-color: rgb(13, 13, 188);
+    border-radius: 16px;
+    z-index: 1;
+}
+
+.left a {
+    color: #fff;
+    line-height: 35px;
+    margin: 0 24px;
+    text-decoration: none;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 1.56rem;
+}
+
+.left .btn-home:hover{
+    box-shadow: 1px 1px 3px #00000067;
+    background: #fff;
+    color: black;
+    transition: 0.5s;
+}
+
+.left .btn-home:hover a{
+    color: black;
+    transition: 0.5s;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    height: 690px;
+}
+
+.right img {
+    height: 300px;
+    width: auto;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.wave-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave-top svg {
+    position: relative;
+    display: block;
+    width: calc(200% + 1.3px);
+    height: 133px;
+    transform: rotateY(180deg);
+}
+
+.wave-top .shape-fill {
+    fill: #0e1f7ecc;
+}
+
+
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.wave-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(150% + 1.3px);
+    height: 119px;
+    transform: rotateY(180deg);
+    z-index: -1;
+}
+
+.wave-bottom .shape-fill {
+    fill: #0e1f7ecc;
+}
