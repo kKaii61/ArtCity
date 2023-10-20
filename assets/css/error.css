@@ -86,14 +86,16 @@
 }
 
 .right {
+    padding: 0 90px 0 0;
     display: flex;
     align-items: center;
     height: 690px;
 }
 
 .right img {
-    height: 500px;
-    width: auto;
+    height: 460px;
+    width: 460px;
+    object-fit: cover;
     border-radius: 50%;
     z-index: 1;
 }
