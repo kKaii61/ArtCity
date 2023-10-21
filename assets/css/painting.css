@@ -1,0 +1,18 @@
+.paintings-showcase {
+    display: flex;
+}
+.paintings-showcase .paintings-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+}
+.paintings-container ul li {
+    list-style-type: none;
+}
+.paintings-container .card {
+    height: 100px;
+    width: 100px;
+    display: flex;
+    background: rgb(40, 117, 193);
+}
