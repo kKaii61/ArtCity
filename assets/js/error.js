@@ -2,7 +2,7 @@ const eyes = document.querySelectorAll('.eye'); //chọn con mắt
 const anchor = document.getElementById('anchor'); // chọn ảnh làm gốc
 const rekt = anchor.getBoundingClientRect(); //Sử dụng getBoundClientRect để có được kích thước và vị trí của một phần tử là anchor
 const anchorX = (rekt.left + rekt.width / 2); //lấy center của phần tử theo X
-const anchorY = (rekt.top + rekt.height / 2) - 50; //lấy center của phần tử theo Y
+const anchorY = (rekt.top + rekt.height / 2); //lấy center của phần tử theo Y
 
 console.log(rekt.left);
 console.log(rekt.width);
