@@ -130,6 +130,7 @@
 .btn-login:hover {
     border-bottom: 2px solid var(--red-color);
     font-weight: 600!important;
+    
 }
 
 /* End: Header section */

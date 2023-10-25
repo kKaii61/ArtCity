@@ -23,6 +23,7 @@
     justify-content: center;
     height: 690px;
     width: 80%;
+    position: relative;
 }
 
 .left .error-message {
@@ -53,7 +54,9 @@
 
 .left .btn-home {
     position: absolute;
-    bottom: 80px;
+    bottom: 220px;
+    left: 50%;
+    transform: translateX(-50%);
     display: block;
     text-align: center;
     width: auto;

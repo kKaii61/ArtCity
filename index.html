@@ -17,7 +17,7 @@
         <link rel="stylesheet" href="./assets/css/carousel.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-
+        <link rel="stylesheet" href="./assets/css/search.css">
         <!-- Font chữ -->
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -86,7 +86,15 @@
                             </div>
                             <!-- Header search -->
                             <div class="header-search">
-                                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                <div class="header__search-icon-wrap" tabindex="1">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </div>
+                                <div class="header__search-input-wrap">
+                                    <input type="text" class="header__search-input" placeholder="Tìm kiếm sản phẩm">
+                                    <button class="header__search-btn">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
                             </div>
                             <!-- Header account -->
                             <div class="header-acc">
