@@ -139,6 +139,11 @@
     display: none;
 }
 
+.carousel-slide a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+
 .carousel .carousel-slide {
     width: 350px;
     height: auto;
