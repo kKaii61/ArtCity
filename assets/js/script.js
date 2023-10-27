@@ -17,16 +17,47 @@ function banner() {
     setTimeout(banner, 2000);
 }
 
-function carousel() {
-    const carousel = document.querySelector(".carousel");
-    const arrowBtns = document.querySelectorAll(".slideshow-container i");
-    const firstCardWidth = carousel.querySelector(".carousel-slide").offsetWidth;
-    let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+// CAROUSEL //
+const wrapper = document.querySelector(".slideshow-container");
+const carousel = document.querySelector(".carousel");
+const arrowBtns = document.querySelectorAll(".slideshow-container i");
+const firstCardWidth = carousel.querySelector(".carousel-slide").offsetWidth;
+const carouselChildrens = [...carousel.children];
 
-    arrowBtns.forEach(btn => {
-     btn.addEventListener("click", () => {
-      carousel.scrollLeft += btn.id === "left" ?  Math.ceil(-firstCardWidth) : Math.ceil(firstCardWidth);
-     })
-    });
-}
+const img = document.querySelector("img");
+img.ondragstart = () => {
+  return false;
+};
 
+
+let isDragging = false, startX, startScrollLeft, timeoutId;
+
+let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
+
+arrowBtns.forEach(btn => {
+ btn.addEventListener("click", () => {
+  carousel.scrollLeft += btn.id === "left" ?  Math.ceil(-firstCardWidth) : Math.ceil(firstCardWidth);
+})
+});
+
+// const dragStart = (e) => {
+//     isDragging = true;
+//     carousel.classList.add("dragging");
+//     startX = e.pageX;
+//     startScrollLeft = carousel.scrollLeft;
+// }
+// const dragStop = () => {
+//     isDragging = false;
+//     carousel.classList.remove("dragging");
+// }
+// const dragging = (e) => {
+//     if(!isDragging) return;
+//     carousel.scrollLeft =  startScrollLeft - (e.pageX - startX);
+// }
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("mouseup", dragStop);
+carousel.addEventListener("mousemove", dragging);
+document.addEventListener("mouseup", dragStop);
+body.addEventListener("mouseup",dragStop);
+body.addEventListener("mouseudown",dragStop);
