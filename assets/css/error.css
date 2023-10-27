@@ -1,5 +1,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap&effect=shadow-multiple|3d-float);
 
+.spacer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 1;
+}
+
+.waves-bg {
+    background-image: url(/assets/img/error/waves-bg.svg);
+}
+
 .error-main {
     position: relative;
     width: 100%;

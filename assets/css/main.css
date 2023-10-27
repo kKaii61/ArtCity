@@ -1,4 +1,3 @@
-
 /* Start: Header section */
 .sticky-top {
     position: sticky;
@@ -103,7 +102,7 @@
     padding: 0 15px;
 }
 
-/* Search icon */
+/* START search icon */
 .header-search {
     font-size: 2em;
     margin-right: 30px;
@@ -114,40 +113,58 @@
     font-size: 24px;
 }
 
-/* Login/signup */
-.header-acc {
+.header-search {
+    position: relative;
 
 }
 
-.btn-login {
-    font-size: 1.4em;
-    padding: 0 10px;
-    height: 64px;
+.header__search-icon-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header__search-icon-wrap:focus ~ .header__search-input-wrap {
+    display: flex;
+}
+
+.header__search-input-wrap {
+    position: absolute;
+    top: 40px;
+    right: -100px;
+    width: 696px;
+    height: 40px;
+    padding: 3px;
+    display: none;
+    border-radius: 2px;
+    align-items: center;
+    background-color: var(--white-color);
+    box-shadow: 0 0px 6px #00000029;
+}
+
+.header__search-input {
+    width: 100%;
+    height: 100%;
     border: none;
-    background-color: #fff;
+    outline: none;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    padding: 0 10px 0 28px;
+    border-radius: 2px;
 }
 
-.btn-login:hover {
-    border-bottom: 2px solid var(--red-color);
-    font-weight: 600!important;
-    
-}
+/* END search icon */
 
 /* End: Header section */
 
 
 
 
-/* Body Section */
+/* START body ection */
 
 
-.body-container {
-    background-color: var(--white-color);
-    display: flex;
-    height: auto;
-    width: 1200px;
-    margin: 0 auto;
-}
+
 
 
 
@@ -217,13 +234,6 @@
 
 
 
-
-
-
-
-
-
-
 /* START BANNER CSS */
 .banner-container {
     margin-top: 40px;
@@ -247,11 +257,6 @@
 /* END BANNER CSS */
 
 
-
-
-/* START login/signup */
-
-/* END login/signup */
 
 
 

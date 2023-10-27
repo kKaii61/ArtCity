@@ -1,18 +1,205 @@
-.paintings-showcase {
+
+
+.painting__content {
+    padding-top: 36px;
+}
+
+.product {
+    border-radius: 2px;
+    background-color: var(--white-color);
+}
+
+.product__heading {
+    padding: 12px 16px;
+    font-size: 1.7rem;
+    margin-top: 0;
+    color: var(--text-color);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.product__heading-icon {
+    font-size: 1.4rem;
+    margin-right: 4px;
+    position: relative;
+    top: -1px;
+}
+
+.product-list {
+    padding: 0 0 8px 0;
+    list-style: none;
+    margin-left: 10px;
+}
+
+.product-item {
+
+}
+
+.product-item--active .product-item__link {
+    color: blue;
+}
+
+.product-item--active .product-item__link::before {
+    content: "";
+    /* dịch top 50% của thẻ chứa nó */
+    top: 50%;
+    /* dịch nó lên lại 50% chính nó */
+    transform: translateY(-50%);
+    left: 6px;
+    position: absolute;
+    border: 4px solid;
+    border-color: transparent transparent transparent blue;
+}
+
+.product-item__link {
+    display: block;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 4px 16px;
+    /* hover vao di chuyen */
+    right: 0;
+    position: relative;
+    transition: right linear 0.1s;
+}
+
+.product-item__link:hover {
+    right: -4px;
+    color: blue;
+}
+
+
+/* START product item */
+.home-product-item {
+    background-color: var(--white-color);
+    margin-top: 10px;
+}
+
+.home-product-item__img {
+    padding-top: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.home-product-item__name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    /* do line-height = 18px nen neu xuong dong 3 lan thi height thanh 54px */
+    /* do do ta set cung height thanh 2 dong 18x2 = 36px */
+    max-height: 3.6rem;
+    margin: 10px 10px 6px;
+    /* xu ly tràn tên thành ... */
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    /* or */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.home-product-item__price {
     display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
 }
-.paintings-showcase .paintings-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 10px;
+
+.home-product-item__price-old {
+    font-size: 1.4rem;
+    margin-left: 10px;
+    color: #666;
+    text-decoration: line-through;
 }
-.paintings-container ul li {
-    list-style-type: none;
+
+.home-product-item__price-current {
+    font-size: 1.6rem;
+    color: blue;
+    margin-left: 10px;
 }
-.paintings-container .card {
-    height: 100px;
-    width: 100px;
+
+.home-product-item__action {
     display: flex;
-    background: rgb(40, 117, 193);
+    margin: 6px 10px 0;
+    justify-content: space-between;
 }
+
+.home-product-item__like {
+    font-size: 1.4rem;
+}
+
+.home-product-item__like-icon-empty {
+
+}
+
+i.home-product-item__like-icon-fill {
+    display: none;
+    color: #f63d30;
+}
+
+/* khi an like se an 1 icon đi và hiện icon còn lại */
+.home-product-item__like--liked .home-product-item__like-icon-fill {
+    display: inline-block;
+}
+
+.home-product-item__like--liked .home-product-item__like-icon-empty {
+    display: none;
+}
+
+.home-product-item__rating {
+    font-size: 1rem;
+    /* tự động đẩy về bên trái đến khi chạm */
+    margin: -1px 0 0 auto;
+    /* có thể dùng transform scale nếu font-size k giảm đc */
+    /* transform: scale(0.7); */
+    /* transform-origin: right; */
+}
+
+.home-product-item__star--gold {
+    color: gold;
+}
+
+.home-product-item__sold {
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 6px;
+}
+
+.home-product-item__origin {
+    display: flex;
+    justify-content: space-between;
+    margin: 3px 10px 0;
+    color: #595959;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.home-product-item__brand {
+
+}
+
+.home-product-item__origin-name {
+
+}
+
+.home-product-item__favourite {
+
+}
+
+.home-product-item__sale-off {
+
+}
+
+.home-product-item__sale-off-percent {
+
+}
+
+.home-product-item__sale-off-label {
+
+}
+
+
+
+/* END product item */

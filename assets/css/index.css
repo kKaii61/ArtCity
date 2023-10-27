@@ -1,3 +1,92 @@
+/* START banner css */
+.banner-container {
+    margin-top: 40px;
+}
+
+.banner-list {
+    margin: 0;
+    padding: 0;
+}
+
+.banner-item {
+   
+    display: none;
+}
+
+.banner-img {
+    height: 405px;
+    width: 100%;
+}
+
+/* END banner css */
+
+
+/* START category */
+.category {
+    margin-top: 60px;
+}
+
+/* Tais su dung */
+.home-title {
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+    font-weight: 600;
+    line-height: normal;
+    font-size: 2.2rem;
+}
+
+.category-list {
+    width: 1200px;
+    display: grid;
+    grid-gap: 24px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    list-style: none;
+}
+
+.category-item-link {
+    display: flex;
+    text-decoration: none;
+}
+
+.category-img {
+    cursor: pointer;
+    max-width: 100%;
+    width: 78px;
+    height: 78px;
+    object-fit: cover;
+    border-radius: 10px;
+    background-color: var(--gray-color);
+}
+
+.category-img img {
+    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.category-title {
+    margin-left: 24px;
+}
+
+.category-title h3 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 16px;
+    margin-top: 6px;
+    color: var(--black-color);
+}
+
+.sub-title {
+    font-size: 13px;
+    color: var(--gray-color);
+}
+/* END category */
+
+
+/* START carousel */
 .slideshow-container {
     max-width: 1500px;
     width: 100%;
@@ -105,3 +194,5 @@
     grid-auto-columns: calc(100%);
     }
 }
+/* END carousel */
+
