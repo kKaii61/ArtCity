@@ -93,9 +93,6 @@
     min-height: 500px;
     height: min-content;
     position: relative;
-    display: flex;
-    align-items: start;
-    justify-items: center;
 }
 
 .slideshow-container .carousel {
@@ -111,6 +108,7 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth; /* cho hiệu ứng bấm nút mượt hơn */
     scrollbar-width: 0;
+    user-select: none;
 }
 
 .slideshow-container i {
@@ -147,18 +145,21 @@
     display: block;
     justify-content: center;
     flex-direction: column;
+    user-select: none;
 }
 
 .carousel-slide :where(.image) {
     display: flex;
     align-items: center;
     justify-content: center;
+    user-select: none;
 }
 
 .carousel-slide .image {
     margin: 5px 0;
     width: 350px;
     height: 350px;
+    user-select: none;
 }
 
 .carousel-slide .image img {
@@ -166,6 +167,7 @@
     height: 350px;
     object-fit: cover;
     border-radius: 25px;
+    user-select: none;
 }
 
 .carousel-slide .title {
