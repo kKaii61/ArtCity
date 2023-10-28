@@ -22,7 +22,6 @@ const wrapper = document.querySelector(".slideshow-container");
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".slideshow-container i");
 const firstCardWidth = carousel.querySelector(".carousel-slide").offsetWidth;
-const carouselChildrens = [...carousel.children];
 
 const img = document.querySelector("img");
 img.ondragstart = () => {
