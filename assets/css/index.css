@@ -37,7 +37,7 @@
 }
 
 .category-list {
-    width: 1200px;
+    width: 100%;
     display: grid;
     grid-gap: 24px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
