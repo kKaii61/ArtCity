@@ -21,6 +21,10 @@ body {
     width: 100%;
 }
 
+.mt-5o {
+    margin-top: 50px;
+}
+
 .grid {
     width: 1400px; /*Kích thước max = 1200*/
     max-width: 100%; /*Nếu thiết bị có kích thước nhỏ hơn thì width sẽ = 100% màn hình đó*/
@@ -49,6 +53,18 @@ body {
     padding-left: 5px;
     padding-right: 5px;
     width: 25%;
+}
+
+.grid__col-3 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 25%;
+}
+
+.grid__col-9 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 75%;
 }
 
 .grid__col-10 {

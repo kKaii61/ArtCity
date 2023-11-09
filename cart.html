@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>ArtCity | Place For Your Arts Going Worldwide</title>
+        <meta name="description" content="" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- JavaScript-->
+        <script src="./assets/js/script.js" defer></script>
+
+        <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/cart.css">
+        <link rel="stylesheet" href="./assets/css/painting.css">
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/index.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link rel="stylesheet" href="./assets/css/carousel.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link rel="stylesheet" href="./assets/css/account.css">
+        <!-- Font chữ -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="main">
+            <!-- Header Section -->
+            <div class="sticky-top">
+                <header class="header-container">
+                    <div class="grid">
+                        <div class="header-main_nav">
+                            <!-- Logo -->
+                            <a href="/">
+                                <div class="header-logo">
+                                    <img  src="./assets/img/logo/AC(138x60px).png" alt="Logo">
+                                </div>
+                            </a>
+                            <!-- Discover -->
+                            <div class="header-discover">
+                                <ul class="header-main_nav_list">
+                                    <li class="header-main_nav-item">
+                                        <a href="./painting.html" class="main_nav-link">Painting</a>
+                                    </li>
+                                    <li class="header-main_nav-item">
+                                        <a href="./printmaking.html" class="main_nav-link">Printmaking</a>
+                                    </li>
+                                    <li class="header-main_nav-item">
+                                        <a href="./digitalArt.html" class="main_nav-link">Digital Art</a>
+                                    </li>
+                                    <li class="header-main_nav-item">
+                                        <a href="./drawing.html" class="main_nav-link">Drawing</a>
+                                    </li>
+                                    <li class="header-main_nav-item">
+                                        <a href="./error.html" class="main_nav-link">Prints</a>
+                                    </li>
+                                    <li class="header-main_nav-item">
+                                        <a href="./sculpture.html" class="main_nav-link">Sculpture</a>
+                                    </li>
+                                    <li class="header-main_nav-item">
+                                        <a href="./tools.html" class="main_nav-link">Tools</a>
+                                    </li>
+                                    <li class="header-main_nav-item" style="cursor: pointer;">
+                                        <a href="./error.html" class="main_nav-link noHover">Advisory</a>
+                                    </li>
+                                    <li class="header-main_nav-item drop-menu">
+                                        <a href="" class="main_nav-link noHover">
+                                            More
+                                            <i class="fa-solid fa-caret-down"></i>
+                                        </a>
+                                            <ul class="subnav-list">
+                                                <li class="subnav-item">
+                                                    <a href="./error.html" class="subnav-link">Artist</a>
+                                                </li>
+                                                <li class="subnav-item">
+                                                    <a href="./error.html" class="subnav-link">Blog & Video</a>
+                                                </li>
+                                                <li class="subnav-item">
+                                                    <a href="./error.html" class="subnav-link">Gallery</a>
+                                                </li>
+                                                <li class="subnav-item">
+                                                    <a href="./error.html" class="subnav-link">Print Service</a>
+                                                </li>
+                                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Header search -->
+                            <div class="header-search">
+                                <div class="header__search-icon-wrap" tabindex="1">
+                                    <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                                </div>
+                                <div class="header__search-input-wrap">
+                                    <input type="text" class="header__search-input" placeholder="Search Arts, Paintings,...">
+                                    <button class="header__search-btn">
+                                        <i class="fa-solid fa-xmark"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- Header account -->
+                            <div class="header-acc">
+                                <a href="./login.html" style="cursor: pointer;">
+                                    <button class="btn-login">Login</button>
+                                </a>
+                            </div>
+                            <div class="header-acc">
+                                <a href="./signup.html">
+                                    <button class="btn-login">SignUp</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+
+            </div>
+
+            <!-- START Body Section -->
+            <div class="body-container">
+                <div class="grid">
+                    <div class="container">
+                        <table>
+                        <caption>Your Cart</caption>
+                        <thead>
+                            <tr>
+                                <th><input type="checkbox" id="chonhet"></th>
+                                <th>Product</th>
+                                <th>Image</th>
+                                <th>Price</th>
+                                <th>Number</th>
+                                <th>Total</th>
+                            </tr>  
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Tranh A</td>
+                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
+                                <td class="price">900000</td>
+                                <td class="number">1</td>
+                                <td id="total"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Tranh B</td>
+                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
+                                <td class="price">1750000</td>
+                                <td class="number">1</td>
+                                <td id="total"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td>
+                                <td>Tranh C</td>
+                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
+                                <td class="price">1300000</td>
+                                <td class="number">1</td>
+                                <td id="total"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td> 
+                                <td>Tranh D</td>
+                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
+                                <td class="price">1150000</td>
+                                <td class="number">1</td>
+                                <td id="total"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="chon" checked></td> 
+                                <td>Tranh E</td>
+                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
+                                <td class="price">950000</td>
+                                <td class="number">1</td>
+                                <td id="total"></td>
+                            </tr>
+                        </tbody>
+                        </table>
+                        <td><button onclick="them(this)">Mua</button></td>
+                        <hr style="margin:20px 0"/>    
+                        <table id="cart"> <caption>Payment</caption> </table>
+                </div>
+            </div>
+            <!-- END Body Section -->
+
+            <!-- Footer Section-->
+            <footer class="footer grid">
+                <div id="footer-container">
+                    <div class="social-container">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-google-plus"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+
+                <div class="footerNav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Our team</a></li>
+                    </ul>
+                </div>
+                <div class="footerBottom">
+                    <p>
+                        Copyright &copy;2023; Designed by
+                        <span class="designer">Kha</span> -
+                        <span class="designer">Trong</span>
+                    </p>
+                </div>
+            </footer>
+
+
+            <!-- START LOGIN/sign-up -->
+ 
+            <!-- END LOGIN/REGISTER -->
+        </div>
+    </body>
+</html>

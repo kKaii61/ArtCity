@@ -11,6 +11,7 @@
         <script src="./assets/js/script.js" defer></script>
 
         <!-- Css -->
+        <link rel="stylesheet" href="./assets/css/painting.css">
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/index.css" />
         <link rel="stylesheet" href="./assets/css/base.css" />
@@ -120,28 +121,72 @@
 
             <div class="body-container">
                 <div class="grid">
-                    <!-- START BANNER -->
-                    <div class="banner-container">
-                        <ul class="banner-list">
-                            <li class="banner-item">
-                                <a href="" class="banner-link">
-                                    <img src="./assets/img/autoplay/index-image.png" alt="" class="banner-img">
-                                </a>
-                            </li>
-                            <li class="banner-item">
-                                <a href="" class="banner-link">
-                                    <img src="./assets/img/autoplay/index-image-01.png" alt="" class="banner-img">
-                                </a>
-                            </li>
-                            <li class="banner-item">
-                                <a href="" class="banner-link">
-                                    <img src="./assets/img/autoplay/index-image-02.png" alt="" class="banner-img">
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-  
+                    <div class="grid__row mt-5o">
+                        <div class="grid__col-3">
+                            <nav class="product">
+                                <h3 class="product__heading">
+                                    <i class="product__heading-icon fa-solid fa-list"></i>
+                                    Category
+                                </h3>
+            
+                                <ul class="product-list">
+                                    <li class="product-item product-item--active">
+                                        <a href="#" class="product-item__link">Painting</a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__link">Printmaking</a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__link">Digital Art</a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__link">Drawing</a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__link">Sculpture</a>
+                                    </li>
+                                    <li class="product-item">
+                                        <a href="#" class="product-item__link">Tools</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="grid__col-9" style="flex: 1;">
+                            <!-- START BANNER -->
+                            <div class="banner-container">
+                                <button class="banner-btn-left" onclick="plusSlides(-1)">
+                                    <i id="left" class="fa-solid fa-angle-left banner-icon"></i>
+                                </button>
+                                <button class="banner-btn-right" onclick="plusSlides(-1)">
+                                    <i id="right" class="fa-solid fa-angle-right banner-icon"></i>
+                                </button>
+                                <ul class="banner-list">
+                                    <li class="banner-item">
+                                        <a href="" class="banner-link">
+                                            <img src="./assets/img/autoplay/index-image.png" alt="" class="banner-img">
+                                        </a>
+                                    </li>
+                                    <li class="banner-item">
+                                        <a href="" class="banner-link">
+                                            <img src="./assets/img/autoplay/index-image-01.png" alt="" class="banner-img">
+                                        </a>
+                                    </li>
+                                    <li class="banner-item">
+                                        <a href="" class="banner-link">
+                                            <img src="./assets/img/autoplay/index-image-02.png" alt="" class="banner-img">
+                                        </a>
+                                    </li>
+                                </ul>
+                                
+                            
+                            </div>
+                            
+                    
                     <!-- END BANNER -->
+                        </div>
+                    </div>
+                    
 
                     <!-- START CATEGORY -->
                     <div class="category">
