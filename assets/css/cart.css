@@ -1,14 +1,21 @@
 .container {
     width: 600px;
     margin: auto;
-    background: blue;
     padding: 20px;
     font-size: 1.2em;
 }
+
+
 table {
     width: 100%;
     border-collapse: collapse;
 }
+
+.container th {
+    background: #003087;
+    color: white;
+}
+
 th,
 td {
     border: 1px solid black;
@@ -19,8 +26,21 @@ caption {
     font-weight: 600;
     font-size: 1.2em;
 }
-button {
-    width: 60px;
-    height: 25px;
+
+.cart-container {
+    position: relative;
+}
+
+.cart-btn {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 30px;
 }
   
+input[type="number"] {
+
+    text-align: center;
+    width: 50px;
+    font-size: 13px;
+}

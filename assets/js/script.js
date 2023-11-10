@@ -88,31 +88,3 @@ body.addEventListener("mouseudown",dragStop);
     
 // }
 
-
-function them(button) {
-    var row = button.parentElement.parentElement.cloneNode(true); 
-    var btnxoa = row.getElementsByTagName("button")[0];
-    btnxoa.innerText = "Xóa";
-    btnxoa.setAttribute('onclick', 'xoa(this)');
-    document.getElementById("cart").appendChild(row);
-}
-
-function xoa(button) {
-    var row = button.parentElement.parentElement;
-    document.getElementById("cart").removeChild(row);
-}
-
-
-function tinhtong(){
-    var cart = document.getElementById("cart"); 
-    var rows = cart.getElementsByTagName("tr");
-    var tong = 0;
-    for (var i = 0; i < rows.length; i++) {
-        var price = rows[i].children[3].innerText;
-        var number = rows[i].children[4].innerText;
-        price=parseInt(price);
-        number=parseInt(number);
-        tong+= price * number;
-    }
-    document.getElementById("total").innerText = tong;
-}

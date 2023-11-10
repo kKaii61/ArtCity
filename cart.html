@@ -9,7 +9,7 @@
 
         <!-- JavaScript-->
         <script src="./assets/js/script.js" defer></script>
-
+        <script src="./assets/js/cart.js" defer></script>
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/cart.css">
         <link rel="stylesheet" href="./assets/css/painting.css">
@@ -122,64 +122,28 @@
             <div class="body-container">
                 <div class="grid">
                     <div class="container">
-                        <table>
-                        <caption>Your Cart</caption>
-                        <thead>
-                            <tr>
-                                <th><input type="checkbox" id="chonhet"></th>
-                                <th>Product</th>
-                                <th>Image</th>
-                                <th>Price</th>
-                                <th>Number</th>
-                                <th>Total</th>
-                            </tr>  
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><input type="checkbox" class="chon" checked></td>
-                                <td>Tranh A</td>
-                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
-                                <td class="price">900000</td>
-                                <td class="number">1</td>
-                                <td id="total"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="chon" checked></td>
-                                <td>Tranh B</td>
-                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
-                                <td class="price">1750000</td>
-                                <td class="number">1</td>
-                                <td id="total"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="chon" checked></td>
-                                <td>Tranh C</td>
-                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
-                                <td class="price">1300000</td>
-                                <td class="number">1</td>
-                                <td id="total"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="chon" checked></td> 
-                                <td>Tranh D</td>
-                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
-                                <td class="price">1150000</td>
-                                <td class="number">1</td>
-                                <td id="total"></td>
-                            </tr>
-                            <tr>
-                                <td><input type="checkbox" class="chon" checked></td> 
-                                <td>Tranh E</td>
-                                <td><img src="./assets/img/drawing/1.jpeg" alt="" width="100px" ></td>
-                                <td class="price">950000</td>
-                                <td class="number">1</td>
-                                <td id="total"></td>
-                            </tr>
-                        </tbody>
-                        </table>
-                        <td><button onclick="them(this)">Mua</button></td>
-                        <hr style="margin:20px 0"/>    
-                        <table id="cart"> <caption>Payment</caption> </table>
+                        <div class="cart-container">
+                            <table class="cart-table">
+                                <caption>Your Cart</caption>
+                                <thead>
+                                    <tr>
+                                        <th><input type="checkbox" id="chonhet"></th>
+                                        <th>Product</th>
+                                        <th>Image</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                        <th>Total</th>
+                                    </tr>  
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                            <td><button onclick="them(this)" class="cart-btn">Thanh Toan</button></td>
+                            <hr style="margin:80px 0"/>    
+                            <table id="cart"> <caption>Payment</caption> </table>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- END Body Section -->
