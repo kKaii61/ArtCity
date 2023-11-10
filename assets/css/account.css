@@ -182,7 +182,7 @@ form {
 }
 
 .signup-innerflex {
-    flex-basis: 1200px;
+    flex-basis: 1300px;
     display: flex;
     justify-content: center;
 }
@@ -193,8 +193,13 @@ form {
     border-radius: 0 10px 10px 0;
     display: flex;
     min-height: 738px;
-    max-height: 738px;
+    max-height: 1600px;
     margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.signup-img {
+    display: flex;
 }
 
 .signup-form {
@@ -252,10 +257,56 @@ form {
 }
 .signup-name,
 .signup-password,
-.signup-email {
+.signup-email,
+.signup-gender,
+.signup-nation,
+.signup-favorite {      /* */
     margin-top: 34px;
     position: relative;
     font-size: 14px;
+}
+
+.radio-container {          /* */
+    display: flex;
+    width: 384px;
+    height: 44px;
+    border: 1px solid var(--gray-color);
+    border-radius: 6px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.male-container,
+.female-container {         /* */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.male-container span,
+.female-container span{         /* */
+    font-size: 1.1em;
+}
+
+.log-radio {
+    width: 2.5em;
+    height: 1.2em;
+}
+
+.checkbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: space-around;
+    height: 50px;
+    margin: auto;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    width: 32%;
 }
 
 .signup-titlehead {
@@ -264,7 +315,8 @@ form {
 }
 
 .log-textfield,
-.log-password {
+.log-password,
+.nation-dropdown select {
     width: 384px;
     height: 44px;
     border: 1px solid var(--gray-color);
