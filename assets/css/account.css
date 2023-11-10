@@ -266,7 +266,7 @@ form {
     font-size: 14px;
 }
 
-.radio-container {          /* */
+.radio-container-gender {          /* */
     display: flex;
     width: 384px;
     height: 44px;
@@ -343,12 +343,17 @@ form {
 }
 
 .signup-btn {
+    cursor: pointer;
     width: 289px;
     height: 45px;
     background: red;
     border-radius: 44px;
     font-size: 16px;
     color: var(--white-color);
+}
+
+.signup-btn:active {
+    background: rgb(255,0,0,0.5);
 }
 
 
@@ -386,3 +391,12 @@ form {
 /* END sign up css */
 
 /* END account css */
+
+
+.warningMessage {
+    font-size: 1.5em;
+}
+
+.required-input {
+    display: flex;
+}
