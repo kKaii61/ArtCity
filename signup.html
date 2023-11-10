@@ -9,6 +9,7 @@
 
         <!-- JavaScript-->
         <script src="./assets/js/script.js" defer></script>
+        <script src="./assets/js/validate.js" defer></script>
 
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/account.css">
@@ -144,63 +145,66 @@
                                             <div class="signup-titlehead">
                                                 <span class="log-para">Name</span>
                                             </div>
-                                            <input type="text" class="log-textfield" required>
+                                            <input type="text" class="log-textfield required-input" required>
                                             <span class="signup-icon">
                                                 <i class="fa-solid fa-user-pen"></i>
                                             </span>
                                         </div>
+                                        <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
                                         <div class="signup-email">
                                             <div class="signup-titlehead">
                                                 <span class="log-para">Email Address</span>
                                             </div>
-                                            <input type="email" class="log-textfield" required>
+                                            <input type="email" class="log-textfield required-input" required>
                                             <span class="signup-icon">
                                                 <i class="fa-solid fa-envelope"></i>
                                             </span>
                                         </div>
+                                        <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
                                         <div class="signup-gender">
                                             <div class="signup-titlehead">
                                                 <span class="log-para">Gender</span>
                                             </div>
-                                                <div class="radio-container">
+                                                <div class="radio-container-gender">
                                                     <div class="male-container">
-                                                        <input type="radio" name="gender" class="log-radio" required>
+                                                        <input type="radio" name="gender" value="male" class="log-radio"  required>
                                                         <span>Male</span>
                                                     </div>
                                                     <div class="female-container">
-                                                        <input type="radio" name="gender" class="log-radio" required>
+                                                        <input type="radio" name="gender" value="female" class="log-radio" required>
                                                         <span>Female</span>
                                                     </div>
                                                 </div>
-                                            </div>
+                                        </div>
+                                        <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
                                         </div>
                                         <div class="signup-favorite">
                                             <div class="signup-titlehead">
                                                 <span class="log-para">Favorite</span>
                                             </div>
-                                            <div class="checkbox radio-container">
+                                            <div class="checkbox radio-container-gender">
                                                 <div class="box-container">
-                                                    <input type="checkbox" name="favorite" class="log-radio" required>
+                                                    <input type="checkbox" name="favorite" class="log-radio" >
                                                     <span>Painting</span>
                                                 </div>
                                                 <div class="box-container">
-                                                    <input type="checkbox" name="favorite" class="log-radio" required>
+                                                    <input type="checkbox" name="favorite" class="log-radio" >
                                                     <span>Printmaking</span>
                                                 </div>
                                                 <div class="box-container">
-                                                    <input type="checkbox" name="favorite" class="log-radio" required>
+                                                    <input type="checkbox" name="favorite" class="log-radio"  >
                                                     <span>Digital Art</span>
                                                 </div>
                                                 <div class="box-container">
-                                                    <input type="checkbox" name="favorite" class="log-radio" required>
+                                                    <input type="checkbox" name="favorite" class="log-radio" >
                                                     <span>Drawing</span>
                                                 </div>
                                                 <div class="box-container">
-                                                    <input type="checkbox" name="favorite" class="log-radio" required>
+                                                    <input type="checkbox" name="favorite" class="log-radio" >
                                                     <span>Prints</span>
                                                 </div>
                                                 <div class="box-container">
-                                                    <input type="checkbox" name="favorite" class="log-radio" required>
+                                                    <input type="checkbox" name="favorite" class="log-radio" >
                                                     <span>Sculpture</span>
                                                 </div>
                                             </div>
@@ -209,8 +213,8 @@
                                             <div class="signup-titlehead">
                                                 <span class="log-para">Nationality</span>
                                             </div>
-                                            <div class="nation-dropdown">
-                                                <select name="nationality" required>
+                                            <div class="nation-dropdown required-input">
+                                                <select name="nationality" class="required-input" required>
                                                     <option value="">-- Select One --</option>
                                                     <option value="afghan">Afghan</option>
                                                     <option value="albanian">Albanian</option>
@@ -407,20 +411,22 @@
                                                   </select>
                                             </div>
                                         </div>
+                                        <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
                                         <div class="signup-password">
                                             <div class="signup-titlehead">
                                                 <span class="log-para">Password</span>
                                             </div>
                                             <div class="tooltip-signup">
-                                                <input type="password" class="log-password" required>
+                                                <input type="password" class="log-password required-input" required>
                                             </div>
                                             <span class="signup-icon">
                                                 <i class="fa-solid fa-lock"></i>
                                             </span>
                                             <!-- <span>showpassword</span> -->
                                         </div>
+                                        <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
                                         <div class="signup-btn-container">
-                                            <button class="signup-btn">Sign Up</button>
+                                            <button class="signup-btn" onclick="changeBackground()">Sign Up</button>
                                         </div>
                                         <div class="signup-already">
                                             <span class="signup-textblock">
