@@ -123,11 +123,25 @@
                 <div class="grid">
                     <div class="container">
                         <div class="cart-container">
+                            <label for="sort-select">Sort by:</label>
+                            <div class="select" style="width:250px;">
+                                <select onchange="handleChangeSelect(this)">
+                                   <option value="0">Chọn: </option>
+                                   <option value="1">Giá từ 0$ - 10$</option>
+                                   <option value="2">Giá từ 10$ - 100$</option>
+                                   <option value="3">Giá từ 100$ - 500$</option>
+                                   <option value="4">Giá từ 500$ - 1000$</option>
+                                   <option value="5">Giá trên 1000$</option>
+                                   <option value="6">Giá tăng dần</option>
+                                   <option value="7">Giá giảm dần</option>
+                                </select>
+                            </div>
+
                             <table class="cart-table">
                                 <caption>Your Cart</caption>
                                 <thead>
                                     <tr>
-                                        <th><input type="checkbox" id="chonhet"></th>
+                                        <th><input type="checkbox" id="select-all"></th>
                                         <th>Product</th>
                                         <th>Image</th>
                                         <th>Price</th>
@@ -139,9 +153,12 @@
                                     
                                 </tbody>
                             </table>
-                            <td><button onclick="them(this)" class="cart-btn">Thanh Toan</button></td>
+                            <!-- <div id="total-price-div">Total Price: <span class="total-price">$0.00</span></div> -->
+                            <div id="payment-button" style="display: none; margin-top: 20px;">
+                                <button onclick="them(this)" class="cart-btn">Thanh Toan</button>
+                            </div>
                             <hr style="margin:80px 0"/>    
-                            <table id="cart"> <caption>Payment</caption> </table>
+                            
                         </div>
                     </div>
                 </div>
