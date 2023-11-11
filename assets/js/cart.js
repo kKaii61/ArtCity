@@ -130,7 +130,6 @@ generateTable(newProducts);
 
 function generateTable(products) {
     const tableBody = document.querySelector('.cart-table tbody');
-    const totalPriceSpan = document.querySelector('.total-price');
   
     products.forEach(product => {
         const row = tableBody.insertRow();
@@ -255,28 +254,38 @@ totalValueCell.colSpan = 1; // Set the appropriate number of columns
     // }
 
     
-function updateTotalPrice() {
-    let total = 0;
-    const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]:checked');
-    checkboxes.forEach(checkbox => {
-        const row = checkbox.closest('tr');
-        const totalCell = row.cells[5];
-        total += parseFloat(totalCell.textContent.replace('$', '')) || 0;
-    });
-
-    // Update the total value in the total row
+    function updateTotalPrice() {
+        let total = 0;
+        const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]:checked');
+        checkboxes.forEach(checkbox => {
+            const row = checkbox.closest('tr');
+            const totalCell = row.cells[5]; // Assuming this cell contains the total price
+            const totalPriceText = totalCell.textContent.trim().replace('$', '');
+            total += parseFloat(totalPriceText) || 0;
+        });
+    
+        // Update the total value in the total row
+        const totalValueCell = document.getElementById('total-value');
+        if (totalValueCell) {
+            totalValueCell.textContent = `$${total.toFixed(2)}`;
+        }
+    
         // Toggle visibility of the payment button
         const paymentButton = document.getElementById('payment-button');
-
-        if (total > 0 && checkboxes.length > 0) {
-            paymentButton.style.display = 'block';
-        } else {
-            paymentButton.style.display = 'none';
+        if (paymentButton) {
+            if (total > 0 && checkboxes.length > 0) {
+                paymentButton.style.display = 'block';
+            } else {
+                paymentButton.style.display = 'none';
+            }
         }
-
-    // Update the total price span
-    totalPriceSpan.textContent = `$${total.toFixed(2)}`;
-}
+    
+        // Update the total price span
+        const totalPriceSpan = document.querySelector('.total-price');
+        if (totalPriceSpan) {
+            totalPriceSpan.textContent = `$${total.toFixed(2)}`;
+        }
+    }
 
 }
 

@@ -302,7 +302,7 @@
 }
 
 .header__cart-view-cart:hover {
-    background-color: #003087;
+    background-color: var(--primary-color);
     color: var(--white-color);
     cursor: pointer;
 }
