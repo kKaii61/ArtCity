@@ -125,6 +125,15 @@
     line-height: 0;
 }
 
+.cart-top{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
 .wave-top svg {
     position: relative;
     display: block;
@@ -139,6 +148,17 @@
 
 
 .wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+    z-index: 0;
+}
+
+.cart-bottom{
     position: absolute;
     bottom: 20px;
     left: 0;
