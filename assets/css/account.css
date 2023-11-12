@@ -10,7 +10,7 @@
 }
 
 .btn-login:hover {
-    border-bottom: 2px solid var(--red-color);
+    border-bottom: 2px solid var(--primary-color);
     font-weight: 600!important;
     cursor: pointer;
 }
