@@ -48,7 +48,7 @@
 }
 
 .header-main_nav-item {
-    padding: 0 1.5rem;
+    padding: 0 1.4rem;
     line-height: 6.4rem;
 }
 
@@ -314,13 +314,13 @@
 
 /* START search icon */
 .header-search {
-    font-size: 2em;
-    margin-right: 30px;
+    /* font-size: 1.8em;
+    margin-left: 10px; */
 }
 
 .search-icon {
     color: #717171;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .header-search {
