@@ -4,10 +4,10 @@ const rekt = anchor.getBoundingClientRect(); //Sử dụng getBoundClientRect đ
 const anchorX = (rekt.left + rekt.width / 2); //lấy center của phần tử theo X
 const anchorY = (rekt.top + rekt.height / 2); //lấy center của phần tử theo Y
 
-console.log(rekt.left);
-console.log(rekt.width);
-console.log(rekt.top);
-console.log(rekt.height);
+// console.log(rekt.left);
+// console.log(rekt.width);
+// console.log(rekt.top);
+// console.log(rekt.height);
 
 document.addEventListener('mousemove', (e) => {
     const mouseX = e.clientX; //lấy vị trí X dựa vào client web
