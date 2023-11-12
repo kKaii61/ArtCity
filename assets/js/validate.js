@@ -63,6 +63,6 @@ for(var i = 0; i < inputs.length; i++){
 for (radio in radioInputs) {
     radioInputs[radio].onclick = function () {
         radioContainer.style.backgroundColor = '';
-            errorMessage[2].style.display = 'none';
+        errorMessage[2].style.display = 'none';
     }
 }
