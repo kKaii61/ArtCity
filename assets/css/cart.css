@@ -12,7 +12,7 @@ table {
 }
 
 .container th {
-    background: #003087;
+    background: var(--primary-color);
     color: white;
 }
 

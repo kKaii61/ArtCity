@@ -10,7 +10,7 @@
 .carousel-img img {
     max-width: 100%;
     margin: 0 auto;
-    height: 678px;
+    /* height: 678px; */
     max-height: 678px;
     display: flex;
     object-fit: contain;

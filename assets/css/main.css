@@ -102,6 +102,216 @@
     padding: 0 15px;
 }
 
+
+/* START header cart */
+
+.header__cart {
+    width: 138px;
+    text-align: center;
+}
+
+.header__cart-wrap {
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.header__cart-wrap:hover .header__cart-list {
+    display: flex;
+}
+
+.header__cart-icon {
+    color: var(--text-color);
+    font-size: 2.4rem;
+    margin-left: 5px;
+}
+
+.header__cart-notice {
+    top: -4px;
+    right: -4px;
+    position: absolute;
+    padding: 1px 7px;
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    border-radius: 10px;
+    border: 2px solid #333;
+    color: var(--text-color);
+    background-color: var(--white-color);
+}
+
+
+.header__cart-list {
+    position: absolute;
+    top: calc(100% + 3px);
+    right: -3px;
+    width: 400px;
+    background-color: var(--white-color);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 1px 3.125rem 0  rgba(0, 0, 0, 0.2);
+    animation: fadeIn ease-in 0.2s;
+    cursor: default;
+    display: none;
+}
+
+.header__cart-list .header__cart-list-no-cart {
+    align-items: center;
+}
+
+.header__cart-list::before {
+    content: "";
+    position: absolute;
+    right: 5px;
+    top: -24px;
+    border-width: 16px 20px;
+    border-style: solid;
+    border-color: transparent transparent var(--white-color) transparent;
+    cursor: pointer;
+}
+
+.header__cart-list-no-cart {
+    padding: 24px 0;
+}
+
+.header__cart-list-no-cart .header__cart-no-cart-img,
+.header__cart-list-no-cart .header__cart-list-no-cart-msg {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.header__cart-no-cart-img {
+    width: 40%;
+    display: none;
+}
+
+.header__cart-list-no-cart-msg {
+    font-size: 1.4rem;
+    margin-top: 14px;
+    color: var(--text-color);
+    display: none;
+}
+
+/* Cart item with product */
+.header__cart-heading {
+    text-align: left;
+    margin: 8px 0 8px 12px;
+    font-size: 1.4rem;
+    color: #999;
+    font-weight: 400;
+}
+
+.header__cart-list-item {
+    padding-left: 0;
+    list-style: none;
+}
+
+.header__cart-item {
+    display: flex;
+    align-items: center;
+    max-height: 300px; /* đặt độ dài cố định để thấy sự thay đổi */
+    padding-left: 0;
+    list-style: none;
+    overflow: auto; /* cái này sẽ hiện thanh cuộn nhé ae */
+}
+
+.header__cart-item:hover {
+    background-color: #ececec;
+}
+
+.header__cart-img {
+    width: 42px;
+    height: 42px;
+    margin: 12px;
+    /* cho vào border để các ảnh có nền trùng vs background k bị nhỏ */
+    border: 1px solid #e8e8e8;
+}
+
+.header__cart-item-info {
+    width: 100%;
+    margin-right: 12px;
+}
+
+.header__cart-item-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.header__cart-item-name {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--text-color);
+    margin: 0;
+    /* Name dài quá nên thêm ... ở cuối nếu lố */
+    white-space: nowrap; 
+    text-overflow: ellipsis; 
+    overflow: hidden;
+    max-width: 190px;
+}
+
+.header__cart-item-price {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: red;
+}
+
+.header__cart-item-multiply {
+    font-size: 0.9rem;
+    margin: 0 4px;
+    color: #757575;
+}
+
+.header__cart-item-qnt {
+    font-size: 1.2rem;
+    color: #757575;
+}
+
+.header__cart-item-body {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__cart-item-description {
+    color: #757575;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.header__cart-item-remove {
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+.header__cart-item-remove:hover {
+    cursor: pointer;
+    color: red;
+
+}
+
+.header__cart-view-cart {
+    position: relative;
+    float: right;
+    padding: 12px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.header__cart-view-cart:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+/* END header cart */
+
+
+
+
 /* START search icon */
 .header-search {
     font-size: 2em;

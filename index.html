@@ -9,7 +9,7 @@
 
         <!-- JavaScript-->
         <script src="./assets/js/script.js" defer></script>
-
+        <script src="./assets/js/banner.js" defer></script>
         <!-- Css -->
         <link rel="stylesheet" href="./assets/css/painting.css">
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -99,6 +99,89 @@
                                     </button>
                                 </div>
                             </div>
+
+                            <!-- Header cart -->
+                            <!-- Cart layout -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">3</span>
+                                <!-- Has no cart class: header__cart-list-no-cart -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no_cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">
+                                        Chưa có sản phẩm
+                                    </span>
+
+                                    <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/painting/art-movements-timeline-hero.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Goddess Blessing</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">$359</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        USA
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/painting/autumn-leaves-backdrop.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Autumn Water Color</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">$250</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        USA
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                        <li class="header__cart-item">
+                                            <img src="./assets/img/painting/Bluehole-Of-Star.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">The Bluehole Of Legend</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">$990</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-qnt">5</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        GER
+                                                    </span>
+                                                    <span class="header__cart-item-remove">Xóa</span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a class="header__cart-view-cart btn btn--primary" href="./cart.html">Xem giỏ hàng</a>
+                                </div>
+                            </div> 
+                        </div>
+
                             <!-- Header account -->
                             <div class="header-acc">
                                 <a href="./assets/pages/login.html" style="cursor: pointer;">
@@ -121,8 +204,8 @@
 
             <div class="body-container">
                 <div class="grid">
-                    <div class="grid__row mt-5o">
-                        <div class="grid__col-3">
+                    <!-- <div class="grid__row mt-5o"> -->
+                        <!-- <div class="grid__col-3">
                             <nav class="product">
                                 <h3 class="product__heading">
                                     <i class="product__heading-icon fa-solid fa-list"></i>
@@ -150,17 +233,24 @@
                                     </li>
                                 </ul>
                             </nav>
-                        </div>
+                        </div> -->
 
-                        <div class="grid__col-9" style="flex: 1;">
+                        <!-- <div class="grid__col-9" style="flex: 1;"> -->
                             <!-- START BANNER -->
                             <div class="banner-container">
+                                
+                 
                                 <button class="banner-btn-left" onclick="plusSlides(-1)">
                                     <i id="left" class="fa-solid fa-angle-left banner-icon"></i>
                                 </button>
                                 <button class="banner-btn-right" onclick="plusSlides(1)">
                                     <i id="right" class="fa-solid fa-angle-right banner-icon"></i>
                                 </button>
+
+<!-- 
+                                <img src="./assets/img/autoplay/index-image.png" alt="" class="banner-img">
+                                <div class="numbertext">1 / 7</div> -->
+
                                 <ul class="banner-list">
                                     <li class="banner-item">
                                         <a href="" class="banner-link">
@@ -207,8 +297,8 @@
                                 </ul>
                             </div>
                     <!-- END BANNER -->
-                        </div>
-                    </div>
+                        <!-- </div>
+                    </div> -->
                     
 
                     <!-- START CATEGORY -->
