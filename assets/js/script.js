@@ -1,7 +1,7 @@
 //Đợi DOM load xong thì javascript gọi mới k bị lỗi
 document.addEventListener("DOMContentLoaded", function() {
-    banner();
-    carousel();
+    //banner();
+    //carousel();
 });
 
 
@@ -28,27 +28,27 @@ arrowBtns.forEach(btn => {
 })
 });
 
-// const dragStart = (e) => {
-//     isDragging = true;
-//     carousel.classList.add("dragging");
-//     startX = e.pageX;
-//     startScrollLeft = carousel.scrollLeft;
-// }
-// const dragStop = () => {
-//     isDragging = false;
-//     carousel.classList.remove("dragging");
-// }
-// const dragging = (e) => {
-//     if(!isDragging) return;
-//     carousel.scrollLeft =  startScrollLeft - (e.pageX - startX);
-// }
+const dragStart = (e) => {
+    isDragging = true;
+    carousel.classList.add("dragging");
+    startX = e.pageX;
+    startScrollLeft = carousel.scrollLeft;
+}
+const dragStop = () => {
+    isDragging = false;
+    carousel.classList.remove("dragging");
+}
+const dragging = (e) => {
+    if(!isDragging) return;
+    carousel.scrollLeft =  startScrollLeft - (e.pageX - startX);
+}
 
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("mouseup", dragStop);
 carousel.addEventListener("mousemove", dragging);
 document.addEventListener("mouseup", dragStop);
-body.addEventListener("mouseup",dragStop);
-body.addEventListener("mouseudown",dragStop);
+// body.addEventListener("mouseup",dragStop);
+// body.addEventListener("mouseudown",dragStop);
 
 
 // var myIndex = 0;
