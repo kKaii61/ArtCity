@@ -335,9 +335,7 @@
     cursor: pointer;
 }
 
-.header__search-icon-wrap:focus ~ .header__search-input-wrap {
-    display: flex;
-}
+
 
 .header__search-input-wrap {
     position: absolute;
@@ -351,6 +349,7 @@
     align-items: center;
     background-color: var(--white-color);
     box-shadow: 0 0px 6px #00000029;
+    z-index: 9999999999;
 }
 
 .header__search-input {
@@ -362,6 +361,10 @@
     color: var(--text-color);
     padding: 0 10px 0 28px;
     border-radius: 2px;
+}
+
+.header__search-input:active {
+    display: block;
 }
 
 /* END search icon */
