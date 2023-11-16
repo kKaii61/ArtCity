@@ -81,16 +81,15 @@ const products = [
 	},
 ];
 
-
+generateTable(products);
 
 function handleChangeSelect(selectElement) {
     
 	const selectedValue = selectElement.value;
+    let newProducts = [];
 	if (selectedValue === "0") {
-        console.log("hi");
-		table.style.display = "none";
+		newProducts = products;
 	} 
-	let newProducts = [];
 	if (selectedValue === "1") {
 		newProducts = products.filter(
 			(p) => p.price >= 0 && p.price <= 10
@@ -269,7 +268,55 @@ totalValueCell.colSpan = 1; // Set the appropriate number of columns
         if (totalValueCell) {
             totalValueCell.textContent = `$${total.toFixed(2)}`;
         }
+
+         // Update the total price in the <dd> element
+        const totalPriceDd = document.getElementById('total-price');
+        if (totalPriceDd) {
+            console.log(total);
+            totalPriceDd.textContent = `$${total.toFixed(2)}`;
+        }
+
+        //Discount apply
+        const applyCouponButton = document.querySelector('.btn-apply.coupon');
+        if (applyCouponButton) {
+            applyCouponButton.addEventListener('click', function(event) {
+                // Ngăn chặn hành vi mặc định của nút (quay lại đầu trang)
+                event.preventDefault();
+                
+                updateTotalPrice;
+            });
+        }
+
+
+        // Check discountt
+        const couponInput = document.querySelector('.coupon');
+        const discountValueDd = document.getElementById('discount-value');
+
+        if (couponInput.value === '123') {
+            // Apply a fixed discount value, e.g., $10.00
+            const discountAmount = 10.00;
+
+            // Update the discount display
+            discountValueDd.textContent = `- $${discountAmount.toFixed(2)}`;
+
+            // Deduct the discount from the total
+            total -= discountAmount;
+
+            // Ensure the total doesn't go below zero
+            total = Math.max(total, 0);
+            // discountValueDd.textContent = '- $10.00';
+        } else {
+            // Reset the discount display
+            discountValueDd.textContent = '- $0.00';
+        }
     
+        //Update the new total after discount
+         // Update the total price in the <dd> element
+        const newTotalDd = document.getElementById('new-total');
+        if (newTotalDd) {
+            newTotalDd.textContent = `$${total.toFixed(2)}`;
+        }
+
         // Toggle visibility of the payment button
         const paymentButton = document.getElementById('payment-button');
         if (paymentButton) {
@@ -280,11 +327,7 @@ totalValueCell.colSpan = 1; // Set the appropriate number of columns
             }
         }
     
-        // Update the total price span
-        const totalPriceSpan = document.querySelector('.total-price');
-        if (totalPriceSpan) {
-            totalPriceSpan.textContent = `$${total.toFixed(2)}`;
-        }
+      
     }
 
 }

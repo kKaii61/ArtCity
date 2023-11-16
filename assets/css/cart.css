@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
 .container {
     width: 600px;
     min-height: 500px;
@@ -45,3 +47,131 @@ input[type="number"] {
     width: 50px;
     font-size: 13px;
 }
+
+
+
+
+
+
+
+
+
+
+.card-container {
+    font-family: "Open Sans", serif;
+    font-size: 14px;
+}
+
+.card-body {
+    /* flex: 1 1 auto; */
+    padding: 14px;
+    min-height: 100px;
+}
+
+
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: gray;
+    background-clip: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0px;
+}
+
+
+
+.form-cart {
+    width: 100%;
+   
+}
+
+.form-group {
+    
+    
+}
+
+.input-group {
+    display: flex;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 6px 16px;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.coupon {
+    border-radius: 1px;
+}
+
+.input-group-append {
+    display: flex;
+    
+}
+
+.price {
+    font-weight: 600;
+    color: #212529;
+}
+
+.btn.btn-out {
+    outline: 1px solid #fff;
+    outline-offset: -5px;
+}
+
+.btn-main {
+    border-radius: 2px;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 10px 19px;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+}
+
+.btn-apply {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+
+
+
+.dlist-align {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+[class*="dlist-"] {
+    margin-bottom: 5px;
+}
+
+dt {
+    color: #212529;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+dd {
+
+}
+
+

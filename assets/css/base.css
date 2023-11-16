@@ -22,9 +22,22 @@ body {
     width: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
+label {
+    display: inline-block;
+}
+
 .mt-5o {
     margin-top: 50px;
 }
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
 
 .grid {
     width: 1400px; /*Kích thước max = 1200*/
@@ -74,6 +87,17 @@ body {
     width: 83.3334%;
 }
 
+
+
 .noHover {
     pointer-events: none;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    border: 1px solid transparent;
 }
