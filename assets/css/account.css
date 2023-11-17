@@ -260,7 +260,8 @@ form {
 .signup-email,
 .signup-gender,
 .signup-nation,
-.signup-favorite {      /* */
+.signup-favorite,
+.signup-note {      /* */
     margin-top: 34px;
     position: relative;
     font-size: 14px;
@@ -408,4 +409,12 @@ form {
     padding: 10px;
     background-color: rgb(230, 85, 114);
     border-radius: 8px;
+}
+
+#note {
+    word-wrap: break-word;
+}
+
+textarea {
+    resize: none;
 }

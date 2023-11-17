@@ -534,12 +534,23 @@
                                             <!-- <span>showpassword</span> -->
                                         </div>
                                         <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
+
+                                        <div class="signup-note">
+                                            <div class="signup-titlehead">
+                                                <span class="log-para">Note</span>
+                                            </div>
+                                            <div class="tooltip-signup">
+                                                <textarea id="note" onkeyup="limitText('.note', 100)" class="log-textfield note" type="text" maxlength="200" size="50" style="height: 5em; padding:10px;"></textarea>
+                                                <span id="charCount">0</span> / 200
+                                            </div>
+                                        </div>
+
                                         <div class="signup-btn-container">
                                             <button class="signup-btn" onclick="changeBackground(); checkPassword();">Sign Up</button>
                                         </div>
                                         <div class="signup-already">
                                             <span class="signup-textblock">
-                                                Already have 
+                                                Already have
                                                 <strong>Collector</strong>
                                                 account
                                             </span>
