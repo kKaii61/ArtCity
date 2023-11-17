@@ -400,3 +400,12 @@ form {
 .required-input {
     display: flex;
 }
+
+.error-text {
+    font-size: 1.8em;
+    display: none;
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(230, 85, 114);
+    border-radius: 8px;
+}
