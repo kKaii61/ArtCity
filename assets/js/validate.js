@@ -87,13 +87,13 @@ function checkBackgroundColor() {
     }
 }
 
-for(var i = 0; i < inputs.length; i++){
-    inputs[i].addEventListener('input', checkBackgroundColor);
-}
+// for(var i = 0; i < inputs.length; i++){
+//     inputs[i].addEventListener('input', checkBackgroundColor);
+// }
 
-for (radio in radioInputs) {
-    radioInputs[radio].onclick = function () {
-        radioContainer.style.backgroundColor = '';
-        errorMessage[2].style.display = 'none';
-    }
-}
+// for (radio in radioInputs) {
+//     radioInputs[radio].onclick = function () {
+//         radioContainer.style.backgroundColor = '';
+//         errorMessage[2].style.display = 'none';
+//     }
+// }
