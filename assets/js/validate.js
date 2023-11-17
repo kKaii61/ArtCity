@@ -12,9 +12,11 @@ function changeBackground() {
         if (inputs[i].value == '') {
             inputs[i].style.backgroundColor = 'yellow';
             warningmessage[i].style.display = 'block';
+            warningmessage[warningmessage.length-1].style.display = 'block';
         } else {
             inputs[i].style.backgroundColor = '';
             warningmessage[i].style.display = 'none';
+            warningmessage[warningmessage.length-1].style.display = 'none';
         }
     }
     for(var i = 0; i < radioInputs.length; i++){
@@ -40,9 +42,11 @@ function checkBackgroundColor() {
         if (inputs[i].value == '') {
             inputs[i].style.backgroundColor = 'yellow';
             warningmessage[i].style.display = 'block';
+            warningmessage[warningmessage.length-1].style.display = 'block';
         } else {
             inputs[i].style.backgroundColor = '';
             warningmessage[i].style.display = 'none';
+            warningmessage[warningmessage.length-1].style.display = 'none';
         }
     }
     for(var i = 0; i < radioInputs.length; i++){
