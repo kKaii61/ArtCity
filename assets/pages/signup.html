@@ -505,12 +505,15 @@
                                             </div>
                                         </div>
                                         <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
+                                        <br>
+                                        <div class="error-text" >Password does not match</div>
                                         <div class="signup-password">
+                                            
                                             <div class="signup-titlehead">
                                                 <span class="log-para">Password</span>
                                             </div>
                                             <div class="tooltip-signup">
-                                                <input type="password" class="log-password required-input" required>
+                                                <input id="pwrd_1" type="password" class="log-password required-input" required>
                                             </div>
                                             <span class="signup-icon">
                                                 <i class="fa-solid fa-lock"></i>
@@ -523,7 +526,7 @@
                                                 <span class="log-para">Confirmed Password</span>
                                             </div>
                                             <div class="tooltip-signup">
-                                                <input type="password" class="log-password log-password-confirm required-input" required>
+                                                <input id="pwrd_2"  type="password" class="log-password log-password-confirm required-input" required>
                                             </div>
                                             <span class="signup-icon">
                                                 <i class="fa-solid fa-lock"></i>
@@ -532,7 +535,7 @@
                                         </div>
                                         <p class="warningMessage" style="color: red; display: none;">This field is required.</p>
                                         <div class="signup-btn-container">
-                                            <button class="signup-btn" onclick="changeBackground()">Sign Up</button>
+                                            <button class="signup-btn" onclick="changeBackground(); checkPassword();">Sign Up</button>
                                         </div>
                                         <div class="signup-already">
                                             <span class="signup-textblock">
