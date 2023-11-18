@@ -8,6 +8,20 @@
     font-size: 1.2em;
 }
 
+.sort-label {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white-color);
+}
+
+.select {
+    width: 250px;
+}
+
+.select-box {
+    
+}
+
 
 table {
     width: 100%;
@@ -27,7 +41,9 @@ td {
 }
 caption {
     font-weight: 600;
-    font-size: 1.2em;
+    font-size: 2rem;
+    color: var(--white-color);
+    margin-bottom: 12px;
 }
 
 .cart-container {
@@ -78,7 +94,7 @@ input[type="number"] {
     flex-direction: column;
     min-width: 0;
     word-wrap: break-word;
-    background-color: gray;
+    background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0px;
@@ -149,10 +165,27 @@ input[type="number"] {
     color: #fff;
     background-color: var(--primary-color);
     border-color: var(--primary-color);
+    padding: 6px 12px;
 }
 
+.btn-apply:hover {
+    background-color: #003dad;
+}
 
+.btn-purchase {
+    background-color: var(--primary-color);
+    padding: 12px;
+    margin: 4px 0 4px;
+}
 
+.btn-purchase:hover {
+    background-color: #003dad;
+}
+
+.btn-continue {
+    background-color: #c0c0c0;
+    padding: 4px;
+}
 
 .dlist-align {
     display: -webkit-box;
@@ -162,6 +195,10 @@ input[type="number"] {
 
 [class*="dlist-"] {
     margin-bottom: 5px;
+}
+
+.text-danger {
+    color: #dc3545;
 }
 
 dt {
@@ -174,4 +211,7 @@ dd {
 
 }
 
+#new-total {
+    font-weight: bold;
+}
 

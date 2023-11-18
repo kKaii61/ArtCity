@@ -2,80 +2,80 @@ const products = [
 	{
 		id: 1,
 		name: "Goddess Blessing",
-        img: "./assets/img/painting/art-movements-timeline-hero.jpg",
-        url: "./product_detail-01.html",
+        img: "../img/painting/art-movements-timeline-hero.jpg",
+        url: "../pages/product_detail-01.html",
 		country: "USA",
 		price: 54,
 	},
 	{
 		id: 2,
 		name: "Autumn Water Color",
-        img: "./assets/img/painting/autumn-leaves-backdrop.png",
-        url: "./product_detail-02.html",
+        img: "../img/painting/autumn-leaves-backdrop.png",
+        url: "../pages/product_detail-02.html",
 		country: "USA",
 		price: 359,
 	},
 	{
 		id: 3,
 		name: "The Bluehole Of Legend",
-        img: "./assets/img/painting/Bluehole-Of-Star.png",
-        url: "./product_detail-03.html",
+        img: "../img/painting/Bluehole-Of-Star.png",
+        url: "../pages/product_detail-03.html",
 		country: "USA",
 		price: 700,
 	},
 	{
 		id: 4,
-		name: "Goddess Blessing",
-        img: "./assets/img/painting/Blurred-Home.png",
-        url: "./product_detail-04.html",
+		name: "Home Fade",
+        img: "../img/painting/Blurred-Home.png",
+        url: "../pages/product_detail-04.html",
 		country: "USA",
 		price: 490,
 	},
 	{
 		id: 5,
-		name: "Goddess Blessing",
-        img: "./assets/img/painting/Butterfly-Girl.png",
-        url: "./product_detail-05.html",
+		name: "What Woman Are Capable Of",
+        img: "../img/painting/Butterfly-Girl.png",
+        url: "../pages/product_detail-05.html",
 		country: "USA",
 		price: 299,
 	},
 	{
 		id: 6,
-		name: "Goddess Blessing",
-        img: "./assets/img/painting/Exhibit-The-Shape-of-Dreams.jpg",
-        url: "./product_detail-06.html",
+		name: "Castle Of Disney World - Origin",
+        img: "../img/painting/Castle-Of-Happiness.png",
+        url: "../pages/product_detail-06.html",
 		country: "USA",
 		price: 1309,
 	},
 	{
 		id: 7,
-		name: "Goddess Blessing",
-        img: "./assets/img/painting/Future-Would_Crazy.jpeg",
-        url: "./product_detail-07.html",
+		name: "Modern Pixel Art Of Chinese Wonder",
+        img: "../img/painting/Chinese-Wonder-Pixel-Art.png",
+        url: "../pages/product_detail-07.html",
 		country: "USA",
 		price: 355,
 	},
 	{
 		id: 8,
-		name: "Goddess Blessing",
-        img: "./assets/img/painting/Idian-God.jpeg",
-        url: "./product_detail-08.html",
+		name: "Dot Desert Art",
+        img: "../img/painting/Dotted-Vision.png",
+        url: "../pages/product_detail-08.html",
 		country: "USA",
 		price: 656,
 	},
 	{
 		id: 9,
-		name: "Goddess Blessing",
-        img: "./assets/img/painting/Rotten-Color.png",
-        url: "./product_detail-09.html",
+		name: "Splash Of Cheer",
+        img: "../img/painting/Drop.png",
+        url: "../pages/product_detail-09.html",
 		country: "USA",
 		price: 4000,
 	},
 	{
 		id: 10,
-		name: "Goddess Blessing",
-        img: "./assets/img/painting/ShadeOfMan.png",
-        url: "./product_detail-10.html",
+		name: "The Scream - Resize",
+        img: "../img/painting/Edvard-Munch-The-Scream.png",
+        url: "../pages/product_detail-10.html",
 		country: "USA",
 		price: 2500,
 	},
@@ -283,7 +283,7 @@ totalValueCell.colSpan = 1; // Set the appropriate number of columns
                 // Ngăn chặn hành vi mặc định của nút (quay lại đầu trang)
                 event.preventDefault();
                 
-                updateTotalPrice;
+                updateTotalPrice();
             });
         }
 
@@ -318,14 +318,14 @@ totalValueCell.colSpan = 1; // Set the appropriate number of columns
         }
 
         // Toggle visibility of the payment button
-        const paymentButton = document.getElementById('payment-button');
-        if (paymentButton) {
-            if (total > 0 && checkboxes.length > 0) {
-                paymentButton.style.display = 'block';
-            } else {
-                paymentButton.style.display = 'none';
-            }
-        }
+        // const paymentButton = document.getElementById('payment-button');
+        // if (paymentButton) {
+        //     if (total > 0 && checkboxes.length > 0) {
+        //         paymentButton.style.display = 'block';
+        //     } else {
+        //         paymentButton.style.display = 'none';
+        //     }
+        // }
     
       
     }

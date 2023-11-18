@@ -30,6 +30,10 @@ label {
     display: inline-block;
 }
 
+.mt-2 {
+    margin-top: 2px;
+}
+
 .mt-5o {
     margin-top: 50px;
 }
@@ -73,6 +77,12 @@ label {
     padding-left: 5px;
     padding-right: 5px;
     width: 25%;
+}
+
+.grid__col-6 {
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 50%;
 }
 
 .grid__col-9 {
