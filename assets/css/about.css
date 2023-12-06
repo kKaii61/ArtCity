@@ -2,33 +2,49 @@
     box-sizing: border-box;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.with-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
 .body-container {
     position: relative;
     justify-content: space-between;
     display: block;
     padding-top: 50px;
-    height: 1000px;
     width: 100%;
+    
     background-color: #d9d9db;
+    height: 3500px;
 }
 
 .about-container {
+    display: grid;
     position: relative;
     margin: auto;
-    height: 95%;
-    width: 90%;
+    height: auto;
+    width: 95%;
     background-color: #fff;
     box-shadow: 2px 2px 15px 12px #9e9c9c;
 }
 
 .about-section {
     position: relative;
-    display: inline-flex;
+    display: flex;
+    height: 125px;
     flex-direction: column;
     padding-top: 10px;
     padding-bottom: 10px;
     text-align: center;
-    height: 18%;
     width: 100%;
     color: aliceblue;
     background-color: var(--primary-color);
@@ -54,7 +70,7 @@
     display: flex;
 }
 
-.about-section-nav button {
+.about-section-nav .btn {
     padding: 0 5px;
     margin-right: 5px;
     height: 25px;
@@ -64,4 +80,60 @@
     cursor: pointer;
 }
 
-.about-section-nav button
+.about-section-nav .btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    font-weight: 600;
+}
+
+.about-section-nav .active.btn {
+    background-color: aliceblue;
+    color: #000;
+}
+
+
+/* ABOUT BODY */
+
+.about-section-content {
+    margin: 25px;
+}
+
+.about-section-content-header {
+    margin-top: 50px;
+    margin-bottom: 25px;
+    border-bottom: #000;
+}
+
+.about-section-content h2 {
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.about-section-content h3 {
+    font-size: 2em;
+    margin: 28px 0;
+    font-weight: 600;
+}
+
+.about-body-header p {
+    font-size: 1.8em;
+    margin: 0 0 16px 0;
+    line-height: 25px;
+}
+
+.investor-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto ;
+}
+
+.founder-container {
+    display: flex;
+    gap: 30px;
+}
+
+.founder {
+    margin: 0 !important;
+    line-height: 5px;
+}
