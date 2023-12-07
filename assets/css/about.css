@@ -91,6 +91,16 @@
     color: #000;
 }
 
+.the-art-network,
+.shop,
+.team-pre,
+.term-privacy,
+.investor
+ {
+    display: none;
+}
+
+
 
 /* ABOUT BODY */
 
@@ -115,10 +125,55 @@
     font-weight: 600;
 }
 
+.about-body-header {
+}
+
 .about-body-header p {
     font-size: 1.8em;
     margin: 0 0 16px 0;
     line-height: 25px;
+}
+
+.about-body-header .link {
+    font-size: 1.8em;
+    margin: 0 0 16px 0;
+    line-height: 25px;
+}
+
+.about-body-header .founder-portrait {
+    height: 200px;
+    width: 159px;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.note {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+}
+
+.note p{
+    margin-bottom: 0 !important;
+}
+
+.social {
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 0 !important;
+}
+
+.social p{
+    margin-bottom: 0 !important;
+}
+
+.social span {
+    line-height: 50px;
+    font-size: 1.17em;
 }
 
 .investor-img {
@@ -135,5 +190,5 @@
 
 .founder {
     margin: 0 !important;
-    line-height: 5px;
+    line-height: 30px !important;
 }
